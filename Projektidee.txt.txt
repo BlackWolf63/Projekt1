@@ -1,0 +1,2 @@
+Ich würde versuchen eine kleine Social-Media-Plattform, ähnliche wie Facebook und co., einzurichten.
+Nutzer sollen Konten erstellen können die von anderen Nutzern einsehbar sind. Ausßerdem sollen sie Texte (eventuell Bilder) "posten" können und die Möglichkeiten haben private Textnachrichten an andere zu versenden.
