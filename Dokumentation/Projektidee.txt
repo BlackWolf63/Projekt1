@@ -87,3 +87,9 @@ Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später währen
 
 Viele Grüße,
 Markus Alpers
+
+=== Projektidee BlackWolf63, 2016-04-17 ===
+
+Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
+Das Spiel soll dabei Lokal an einem Endgerät gespielt werden und das Spielfeld grafisch zu sehen sein, sowie alle wichtig Informationen und Karten der Spieler.
+Spiel Karten werden durch Werte in Tabellen und Textausgaben ersetzt.
