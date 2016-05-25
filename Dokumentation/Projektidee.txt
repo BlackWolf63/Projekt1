@@ -91,4 +91,19 @@ Markus Alpers
 === Projektidee BlackWolf63, 2016-04-17 ===
 
 Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
-Spier eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. Das Spielfeld grafisch zu sehen sein. Alle wichtig Informationen und Karten des Spielers werden angezeigt.
+
+Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. Das Spielfeld grafisch zu sehen sein. Alle wichtig Informationen und Karten des Spielers werden angezeigt.
+
+Es gibt zwei Startvarieanten: für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+Das Spielfeld besteht aus 19 fünfeckigen Landfeldern, um geben von Meer. Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen. Wald erzeugt Holz, Ackerland erzeugt Getreide, Hügelland erzeugt Lehm, Weideland erzeugt Wolle, Gebirge erzeugt Erz und Wüste erzeugt keine Erträge. Landfeldern erhalten zudem eine Nummer zwischen 2 und 11. An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. Spieler können sie nutzen wenn sie eine Strasse zu ihnen haben.
+Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden. Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen. Jeder Zu beginn jedes Zuges werden zwei Zufallszahlen zwischen 1 und 5 generiert und zusammen gerechenet. Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
+
+Die Aufgabe der Spieler besteht darin, die Insel zu besiedeln. Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen. 
+Zu beginn der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. Die Spielfieguren der Spieler unterscheiden sich farbig.
+
+Am Anfang jedes Zuges erhalten alle Spieler ihre Rohstoffe. Nun kann der aktive Spieler mit Mitspielern handeln. Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen. Außerdem kann der aktive Spieler mit der Bank handeln. Hier kann er 4 identische Rohstoffe gegen einen blieben andern tauschen und besondere Handelsangebote der Häfen nutzen falls den entsprechen angebunden hat. Außerdem kann man für ein Erz, ein Wolle undn ein Getreide eine Entwicklungskarte kaufen.
+
+Nun darf der akitver Spieler bauen. Für einen Lehm und ein Holz kann der eine Straße platziern. Der Spieler der die längste zusammenhängende Straße besitzt (ohne Abzweigungen) erhält den Bonus "Längste Handelsstraße". Dieser ist zwei Spiegpunkte wert. 
+Neue Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die nächste Siedlung ist mindestens 2 Kreuzungen weit entfernt von jeder anderen. 
+Eine Siedlung ist ein Siegpunkt wert. Eine Siedlung kann zu einer Stadt ausgebaut werden. Dies kostet 3x Erz und 2x Getreide. Eine Stadt ist zwei Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. Diese geben entweder Siegpunkte oder sind Fortschrittkarten, welche jeweils beim ausspielen den auf ihnen beschrieben Effekt ausführen.
