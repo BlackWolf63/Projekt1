@@ -1,10 +1,71 @@
+===========================================
+=== Projektidee BlackWolf63, 2016-04-17 ===
+===========================================
+
+Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
+
+Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. 
+Das Spielfeld grafisch zu sehen sein. 
+Alle wichtig Informationen und Karten des Spielers werden angezeigt.
+
+Es gibt zwei Startvarieanten: 
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+
+Das Spielfeld besteht aus 19 fünfeckigen Landfeldern, um geben von Meer. 
+
+Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen: 
+- Wald erzeugt Holz, 
+- Ackerland erzeugt Getreide, 
+- Hügelland erzeugt Lehm, 
+- Weideland erzeugt Wolle, 
+- Gebirge erzeugt Erz und 
+- Wüste erzeugt keine Erträge. 
+
+Landfeldern erhalten zudem eine Nummer zwischen 2 und 11. 
+An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. 
+Spieler können sie nutzen wenn sie eine Strasse zu ihnen haben.
+Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden. 
+Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen. 
+Jeder Zu beginn jedes Zuges werden zwei Zufallszahlen zwischen 1 und 5 generiert und zusammen gerechenet. 
+Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
+
+Die Aufgabe der Spieler besteht darin, die Insel zu besiedeln. 
+Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen. 
+Zu beginn der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. 
+Die Spielfieguren der Spieler unterscheiden sich farbig.
+
+Am Anfang jedes Zuges erhalten alle Spieler ihre Rohstoffe. 
+Nun kann der aktive Spieler mit Mitspielern handeln. 
+Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen. 
+Außerdem kann der aktive Spieler mit der Bank handeln. 
+Hier kann er 4 identische Rohstoffe gegen einen blieben andern tauschen und besondere Handelsangebote der Häfen nutzen falls den entsprechen angebunden hat. Außerdem kann man für ein Erz, ein Wolle undn ein Getreide eine Entwicklungskarte kaufen.
+
+Nun darf der akitver Spieler bauen. 
+Für einen Lehm und ein Holz kann der eine Straße platziern. 
+Der Spieler der die längste zusammenhängende Straße besitzt (ohne Abzweigungen) erhält den Bonus "Längste Handelsstraße". 
+Dieser ist zwei Spiegpunkte wert. 
+
+Neue Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die nächste Siedlung ist mindestens 2 Kreuzungen weit entfernt von jeder anderen. 
+Eine Siedlung ist ein Siegpunkt wert. 
+Eine Siedlung kann zu einer Stadt ausgebaut werden. 
+Dies kostet 3x Erz und 2x Getreide. 
+Eine Stadt ist zwei Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
+Diese geben entweder Siegpunkte oder sind Fortschrittkarten, welche jeweils beim ausspielen den auf ihnen beschrieben Effekt ausführen.
+
+===========================================
 === Projektidee BlackWolf63, 2016-04-05 ===
+===========================================
 
 Ich würde versuchen eine kleine Social-Media-Plattform, ähnliche wie Facebook und co., einzurichten.
 
 Nutzer sollen Konten erstellen können die von anderen Nutzern einsehbar sind. Ausßerdem sollen sie Texte (eventuell Bilder) "posten" können und die Möglichkeiten haben private Textnachrichten an andere zu versenden.
 
+===================================
 === Feedback Alpers, 2016-04-05 ===
+===================================
 
 Die Idee ist leider nicht gut, weil Sie "ein interaktives Programm" entwickeln sollen. Das bedeutet, dass es Elemente geben soll, die Nutzer anwählen können und/oder Bereiche, in denen sie etwas eintragen oder auswählen können. Es soll im Hintergrund ein Programm aktiv sein, das eine gewisse Funktionalität umsetzt und mit dem NutzerInnen interagieren können.
 
@@ -12,98 +73,45 @@ Im Gegensatz dazu bieten soziale Netzwerke im Grunde nicht mehr an als jedes Mai
 
 Versuchen Sie deshalb, entsprechend der nächsten Aufgabe ein "Siedler von Catan" als Projektidee zu beschreiben. (Wenn Sie das Spiel nicht kennen, schauen Sie sich im Netz um, Sie werden dort eine Vielzahl an Videos und Beschreibungen finden.)
 
+===============================================================
 === Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+===============================================================
+(gelöscht, da im Lernraum für alle einsehbar)
 
-Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
+===================================
+=== Feedback Alpers, 2016-05-31 ===
+===================================
 
-Die nächste Aufgabe besteht aus den folgenden Teilen:
+Leider ist Ihre Beschreibung noch deutlich zu nahe am Regelwerk des Brettspiels. Eine Beschreibung sollte in den ersten Zeilen Lust darauf machen, mehr zu erfahren.
 
-1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
+Eine Zusammenfassung sollte wie gesagt das Interesse am Spiel wecken, also müssen Sie darin in sehr knapper Form den Kern des Spiels zusammenfassen. Und der hat mit dem Zählen von Punkte oder der Anzahl von Spielfeldern nichts zu tun. Das selbe gilt für die folgenden Sätze, in denen Sie angeben, wie Spieler wie viele Punkte bekommen können.
 
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
-Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
+Denken Sie bitte auch daran, dass es nicht um eine 1:1-Umsetzung des Brettspiels selbst geht. Hier denke ich beispielsweise an die Spielerzahl: Es sollte möglich sein, dass ein Spieler das Spiel alleine spielen kann (Stichwort: Computergegner), aber schauen Sie auch, welche Möglichkeiten es gibt, um das Spiel für mehr als 5 Spieler anzupassen.
 
-2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
-Es ist dabei egal, ob es diese Elemente in HTML gibt.
-Es ist auch egal, ob Sie sich schon in HTML eingearbeitet haben.
-Wichtig ist nur, dass Sie die strukturellen Elemente benennen, aus der die Anwendung bestehen soll.
-Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
+Danach sollte die Beschreibung alle für Spieler relevanten Teile des Spiels beinhalten. Hier sind Sie leider auch zu nahe am Brettspiel: Wenn Sie die Spielfelder mit den Zahlen 2 bis 11 nummerieren, dann beschränken Sie sich unnötig. Beim Brettspiel gibt es dagegen kaum eine andere Möglichkeit. Und umgekehrt ist es schwierig, mit den Mitteln, die Sie bislang kennen gelernt haben, Sechsecke zu programmieren. Quadrate sind dagegen ganz einfach.
 
-strukt.html
+Die Projektbeschreibung ist also im Kern eine Inhaltsangabe. Der Unterschied gegenüber dem Deutschunterricht ist der, dass Sie ein Computerprogramm zusammenfassen müssen, das Sie selbst konzipieren sollen und für das einige Vorgaben einzuhalten sind.
 
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
+Für die Umsetzung in ein Computerspiel müssen Sie jetzt genau herausarbeiten, was für Interaktionsmöglichkeiten es geben soll. Die sind wiederum die Basis für die interaktiven unter den strukturellen Elementen. Und machen Sie hier bitte nicht den Fehler, die Elemente des Brettspiels als Elemente des Computerspiels umzusetzen.
 
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
-- Tabellen
-- Listen
-- Schaltflächen
-- Textfelder
-- Bildbereiche
-- Hintergrundmusik
-- Absätze
-- ...
+Hier noch ein Absatz zum Thema Interaktion: Die Schaltflächen, die NutzerInnen verwenden können sind nur die bedienbaren Elemente eines Computerprogramms. Interaktion ist wesentlich mehr als das. Denken Sie beispielsweise daran, wie eine Pokerrunde gespielt wird. Dabei spielt es nämlich eine Rolle, welche Karten abgeworfen wurden. Die Spieler (und bei einem Computerprogramm der Computer) analysieren kontinuierlich das Verhalten der anderen Spieler und ändern Ihren Spielstil in Abhängigkeit davon. Und genau das müssen Sie auch als Teil Ihres Projekts ausarbeiten und in die Projektbeschreibung integrieren.
 
-In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
-Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
+Hier die zweite Schwierigkeit: Sie müssen sich überlegen, was Sie alles streichen und was sie alles ergänzen müssen, damit es ein eigenständiges webbasiertes Computerspiel wird.
 
-Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
-- - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
-- Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
-- Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
+Sie müssen bei der Projektkonzeption also insbesondere an Dinge denken, die in einem Brettspiel nicht vorkommen. Ein Log-In oder eine Highscore-Liste wären nur zwei von vielen Möglichkeiten, die hinzukommen. Die direkte Unterhaltung zwischen Spielern muss dagegen im Bedarfsfall anders gelöst werden. Und Aufgaben wie das Aufnehmen einer Karte, das verschieben eines Elements auf dem Spielbrett fallen häufig bei Computerspielen unter den Tisch.
 
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
+Denken Sie bitte auch daran, dass Änderungen in einem Teil des Projekts häufig auch Änderungen in einem anderen Teil des Projekts nach sich ziehen.
 
-Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
+Und arbeiten Sie bitte mit Überschriften, aus denen erkennbar ist, was die nächsten Zeilen beschreiben. (Stichwort: Regeln, Strukturen, ...)
 
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
+Wertung 2: Projektbeschreibung: gesamt: 2 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 2 (leider sehr unübersichtlich)
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
 
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
-
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
-
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
-
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
-
-Abschließender Hinweis zu 4. und 5.:
-
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
-
-Viele Grüße,
-Markus Alpers
-
-=== Projektidee BlackWolf63, 2016-04-17 ===
-
-Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
-
-Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. Das Spielfeld grafisch zu sehen sein. Alle wichtig Informationen und Karten des Spielers werden angezeigt.
-
-Es gibt zwei Startvarieanten: für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
-Das Spielfeld besteht aus 19 fünfeckigen Landfeldern, um geben von Meer. Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen. Wald erzeugt Holz, Ackerland erzeugt Getreide, Hügelland erzeugt Lehm, Weideland erzeugt Wolle, Gebirge erzeugt Erz und Wüste erzeugt keine Erträge. Landfeldern erhalten zudem eine Nummer zwischen 2 und 11. An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. Spieler können sie nutzen wenn sie eine Strasse zu ihnen haben.
-Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden. Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen. Jeder Zu beginn jedes Zuges werden zwei Zufallszahlen zwischen 1 und 5 generiert und zusammen gerechenet. Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
-
-Die Aufgabe der Spieler besteht darin, die Insel zu besiedeln. Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen. 
-Zu beginn der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. Die Spielfieguren der Spieler unterscheiden sich farbig.
-
-Am Anfang jedes Zuges erhalten alle Spieler ihre Rohstoffe. Nun kann der aktive Spieler mit Mitspielern handeln. Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen. Außerdem kann der aktive Spieler mit der Bank handeln. Hier kann er 4 identische Rohstoffe gegen einen blieben andern tauschen und besondere Handelsangebote der Häfen nutzen falls den entsprechen angebunden hat. Außerdem kann man für ein Erz, ein Wolle undn ein Getreide eine Entwicklungskarte kaufen.
-
-Nun darf der akitver Spieler bauen. Für einen Lehm und ein Holz kann der eine Straße platziern. Der Spieler der die längste zusammenhängende Straße besitzt (ohne Abzweigungen) erhält den Bonus "Längste Handelsstraße". Dieser ist zwei Spiegpunkte wert. 
-Neue Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die nächste Siedlung ist mindestens 2 Kreuzungen weit entfernt von jeder anderen. 
-Eine Siedlung ist ein Siegpunkt wert. Eine Siedlung kann zu einer Stadt ausgebaut werden. Dies kostet 3x Erz und 2x Getreide. Eine Stadt ist zwei Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
-Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. Diese geben entweder Siegpunkte oder sind Fortschrittkarten, welche jeweils beim ausspielen den auf ihnen beschrieben Effekt ausführen.
+=====================
+=== Feedback Ende ===
+=====================
