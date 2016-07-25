@@ -125,3 +125,45 @@ Leider haben Sie dagegen seit dem letzten Feedback nicht am Projekt gearbeitet.
 
 Auf Grund der Klausuren und persönlicher Gründe war es mir bisher nicht möglich mich seit dem letzten Feedback mit dem Projekt zu beschäfitgen.
 Bis zum Ende nächster Woche wird nun aber eine komplete Überarbeitung der Aufgaben erfolgen und bis zum Ende der Semsterferien möchte sämtliche Aufgaben bearbeitet haben.
+
+===================================
+=== Feedback Alpers, 2016-07-25 ===
+===================================
+
+== I ==
+Die Beschreibung ist weitgehend gut, allerdings orientiert sie sich noch zu sehr am Brettspiel bzw. an den Beschränkungen, die ein Brettspiel nötig macht.
+
+Hier ein Beispiel:
+"Landfeldern erhalten zudem eine Nummer zwischen 2 und 11."
+
+Diese Einschränkung ist für das Brettspiel relevant: Die Zahlen von 2 bis 11 werden dort gewählt, weil es z.B. keinen sieben-seitigen Würfel geben kann. Ein Computer kann dagegen problemlos auch einen Zufallszahlengenerator von 1 bis 7 erzeugen.
+
+"Spieler können sie nutzen wenn sie eine Strasse zu ihnen (den Häfen) haben."
+
+Dieser Satz ist typisch für ein Brettspiel, er wird Ihnen aber bei der Programmierung (zusammen mit der Festlegung, dass die Felder fünfeckig sein sollen) um die Ohren fliegen: Mit den Mitteln, die Sie nutzen dürfen können wird es extrem schwierig, Felder zu programmieren, die nicht viereckig sind. Weiterhin müssen Sie sich überlegen, wie Sie eine Straße programmieren wollen.
+
+== II ==
+Leider ist einige Sätze der Beschreibung immer noch unklar.
+
+Beispiel:
+"Das Spielfeld grafisch zu sehen sein."
+
+Dieser Satz (abgesehen davon, dass da ein Verb fehlt) sagt leider nichts aus: Es ist unklar, was Sie damit meinen. Und vor allem sagt er nichts über den Aufbau des Spielfelds auf. Allerdings habe ich eine grobe Vorstellung von dem, was Sie meinen und wenn die zutrifft, dann nehmen Sie sich hier etwas vor, das nur mit Canvas umsetzbar ist. Canvas ist aber für dieses Projekt nicht zugelassen.
+
+== III ==
+Auch wenn Sie auf die Webbasierung nicht eingehen, scheint die implizit schon enthalten zu sein.
+
+== IV ==
+Leider haben Sie die in der Beschreibung geforderte Interaktion (die zum Teil Adaption ist) noch nicht umgesetzt.
+
+== Zusammenfassung und Ausblick ==
+Bevor Sie mit die Arbeit an der Struktur fortsetzen müssen Sie den Aufbau des Spielfeldes festlegen.
+Auch sonst müssen Sie noch mehr Arbeit in die Beschreibung investieren, denn wenn Sie in die die geforderte Interaktion und Webbasierung integriert haben, wird voraussichtlich in Teilen eine ganz andere Struktur herauskommen als die, die Sie im Moment entwickelt haben.
+
+Wertung 2: Projektbeschreibung: gesamt: 4 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 4
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)

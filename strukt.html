@@ -1,4 +1,81 @@
 ========================================================
+=== Überarbeitete Version der sturk.html, 2016-07-23 ===
+========================================================
+
+Siedler von Cartan
+
+strukturellen Elemente
+
+-01- Textfeld "Bitte Spieler Namen eintragen"
+-02- Auswahlfläche (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
+-03- Schaltfläche "Spiel Starten"
+nur wenn StartBeginner: -04- Tutorial
+-05- Grafik gewürfelte Zahl
+-06- Textfeld Name des Spielers der am Zug ist und momentane Rundenzahl
+-07- Spielfeld
+-08- Tabelle "Status des aktiven Spielers" (2x8) 
+-09- - Entwicklungskarten in Besitz
+-10- -- drei Schaltflächen zum Auswählen nächste/vorige Karte, sowie zu ausspielen gerade ausgewählten
+-11- Schaltfläche "Handel mit Spielern" 
+-12- - Tabelle "Rohstoffkarten-Handel" 3x5
+
+-13- - Textfeld "Spieler mit dem Gehandelt werden soll eintragen"
+-14- - Tabelle "Rohstoffkarten-Handel anderer Spieler" 3x5
+
+-15- --   Schlatfläche "Handel Abschließen"
+-16-  Schaltfläche Tabelle "Handel mit Bank"
+-17- - Tabelle "Handel" 3x5
+-18- -- Schlatfläche "Handel Abschließen"
+-19- Schaltfläche "Entwicklungkarte kaufen"
+-20- Text "Baukosten"
+-21- Schlatfläche "Spielregeln"
+-22- Schaltfläche "Zug beenden"
+-23- Grafik "Entwicklungskarte"
+-24- Schlatfläche "Spiel speichern
+-25- Schaltfläche "Spiel Beitreten"
+-26- Textfeld "Name des Spiels"
+
+-27- Text "Spielregeln"
+
+Gruppen
+
+I -01- Textfeld "Bitte Spieler Namen eintragen"
+I -02- Auswahlfläche (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
+I -03- Schaltfläche "Spiel Starten"
+I -26- Textfeld "Name des Spiels"
+I -25- Schaltfläche "Spiel Beitreten"
+
+II -05- Grafik gewürfelte Zahl
+II -06- Textfeld Name des Spielers der am Zug ist und momentane Rundenzahl
+II -07- Spielfeld
+II -20- Text "Baukosten"
+
+III -08- Tabelle "Status des aktiven Spielers" (2x8) 
+III -09- - Entwicklungskarten in Besitz
+III -10- -- drei Schaltflächen zum Auswählen nächste/vorige Karte, sowie zu ausspielen gerade ausgewählten
+III -23- Grafik "Entwicklungskarte"
+
+
+IV -11- Schaltfläche "Handel mit Spielern" 
+IV -12- - Tabelle "Rohstoffkarten-Handel" 3x5
+IV -13- - Textfeld "Spieler mit dem Gehandelt werden soll eintragen"
+IV -14- - Tabelle "Rohstoffkarten-Handel anderer Spieler" 3x5
+IV -15- -- Schlatfläche "Handel Abschließen"
+
+V -16-  Schaltfläche Tabelle "Handel mit Bank"
+V -17- - Tabelle "Handel" 3x5
+V -18- -- Schlatfläche "Handel Abschließen"
+V -19- Schaltfläche "Entwicklungkarte kaufen"
+
+VI -21- Schlatfläche "Spielregeln"
+VI -27- Text "Spielregeln"
+
+VII -22- Schaltfläche "Zug beenden"
+VII -24- Schlatfläche "Spiel speichern
+
+VIII -20- Text "Baukosten"
+
+========================================================
 === Überarbeitete Version der sturk.html, 2016-05-17 ===
 ========================================================
 
@@ -265,82 +342,73 @@ Und insbesondere verweist die nähere Beschreibung auf einen wahrscheinlichen Ko
 
 Insgesamt sind die Beschreibungen zu den strukturellen Elementen noch deutlich zu umfangreich: Da sie direkt aus der Spielbeschreibung folgen sollen, sollten im Regelfall wenige Stichpunkte genügen, um den Sinn zu verdeutlichen.
 
-========================================================
-=== Überarbeitete Version der sturk.html, 2016-07-23 ===
-========================================================
+===================================
+=== Feedback Alpers, 2016-07-25 ===
+===================================
 
-Siedler von Cartan
+== I ==
+Leider haben Sie den Anfang des letzten Feedbacks zur Struktur in den letzten zwei Monaten nicht umgesetzt. Sie haben zwar "-07- Reservierte Fläche für Spielfeld" in "-07- Spielfeld" umbeanannt, aber ansonsten haben Sie diese ausgesprochen wichtige Aufgabe links liegen lassen.
 
-strukturellen Elemente
-
+== II ==
+Sie haben sich auch mit den strukturellen Elementen kaum beschäftigt. Hier ein Beispiel:
 -01- Textfeld "Bitte Spieler Namen eintragen"
--02- Auswahlfläche (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
--03- Schaltfläche "Spiel Starten"
-nur wenn StartBeginner: -04- Tutorial
+
+Dass es sich hier um ein Label und nicht um ein Textfeld handelt ist ein typischer Einsteigerfehler. Aber Sie haben darüber hinaus schlicht die Eingabemöglichkeit nicht aufgeführt. Und eine Anzeige "Bitte Spieler Namen eintragen", ohne dass NutzerInnen anschließend etwas eingeben können ist unsinnig. Bitte auch in dieser Hinsicht die strukturellen Elemente überarbeiten.
+
+== III ==
+Bei einigen strukturellen Elementen zeigt sich, dass Sie immer noch in Kategorien eines Brettspiels denken:
 -05- Grafik gewürfelte Zahl
--06- Textfeld Name des Spielers der am Zug ist und momentane Rundenzahl
--07- Spielfeld
+
+Diese Anzeige wäre dann sinnvoll, wenn die Spieler aufgrund des Wurfergebnisses etwas tun müssten. Das ist aber nur beim Brettspiel der Fall. Beim Computerspiel können Sie (als EntwicklerIn) z.B. umgehend die Felder hervorheben, die eine "Ernte" erbracht haben.
+
+== IV ==
+Sie differenzieren noch nicht klar zwischen Gruppen und strukturellen Elementen:
+-08- Tabelle "Status des aktiven Spielers" (2x8) 
+
+Diese Tabelle ist eine Gruppe, denn sie gruppiert ja verschiedene Elemente, die auch für sich alleine in einer Ansicht platziert werden könnten. Das ist allerdings nichts wirklich schwerwiegendes. Viel wichtiger ist folgendes:
+
 -08- Tabelle "Status des aktiven Spielers" (2x8) 
 -09- - Entwicklungskarten in Besitz
 -10- -- drei Schaltflächen zum Auswählen nächste/vorige Karte, sowie zu ausspielen gerade ausgewählten
--11- Schaltfläche "Handel mit Spielern" 
--12- - Tabelle "Rohstoffkarten-Handel" 3x5
 
+Wenn Sie das so umsetzen, dann bedeutet das, dass alle Spieler sehen, welche Karten und Werte der gerade aktive Spieler hat. Damit ist es nicht möglich, Karten vor anderen Spielern zu verbergen.
+
+== V ==
 -13- - Textfeld "Spieler mit dem Gehandelt werden soll eintragen"
--14- - Tabelle "Rohstoffkarten-Handel anderer Spieler" 3x5
 
--15- --   Schlatfläche "Handel Abschließen"
--16-  Schaltfläche Tabelle "Handel mit Bank"
--17- - Tabelle "Handel" 3x5
--18- -- Schlatfläche "Handel Abschließen"
--19- Schaltfläche "Entwicklungkarte kaufen"
--20- Text "Baukosten"
--21- Schlatfläche "Spielregeln"
--22- Schaltfläche "Zug beenden"
--23- Grafik "Entwicklungskarte"
--24- Schlatfläche "Spiel speichern
--25- Schaltfläche "Spiel Beitreten"
--26- Textfeld "Name des Spiels"
+Es macht keinen Sinn, dass Spieler den Namen anderer Spieler per Tastatur eintragen müssen. Schauen Sie nochmal ins Skript und prüfen Sie, welche Möglichkeiten da sinnvoller sind.
 
+== VI ==
 -27- Text "Spielregeln"
 
-Gruppen
+Ein Text ist kein strukturelles Element, sondern lediglich ein möglicher Inhalt für viele strukturelle Elemente. Ihre Aufgabe an dieser Stelle besteht darin, zu entscheiden, welches strukturelle Elemente bzw. welche strukturellen Elemente Sie für den Text verwenden wollen.
 
-I -01- Textfeld "Bitte Spieler Namen eintragen"
-I -02- Auswahlfläche (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
-I -03- Schaltfläche "Spiel Starten"
-I -26- Textfeld "Name des Spiels"
-I -25- Schaltfläche "Spiel Beitreten"
+== VII ==
+-02- Auswahlfläche (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
 
-II -05- Grafik gewürfelte Zahl
-II -06- Textfeld Name des Spielers der am Zug ist und momentane Rundenzahl
-II -07- Spielfeld
-II -20- Text "Baukosten"
+Eine "Auswahlfläche" gibt es nicht. Hier müssen Sie prüfen, welche Eingabemöglichkeiten denkbar sind und sich dann für eine davon entscheiden.
 
-III -08- Tabelle "Status des aktiven Spielers" (2x8) 
-III -09- - Entwicklungskarten in Besitz
-III -10- -- drei Schaltflächen zum Auswählen nächste/vorige Karte, sowie zu ausspielen gerade ausgewählten
-III -23- Grafik "Entwicklungskarte"
+== VIII ==
+Ihre Aufgabe besteht darin, den Gruppen Bezeichner zu geben, die später als Dateiname verwendet werden. Schauen Sie dazu nochmal in die Aufgabenstellung.
 
+== IX ==
+nur wenn StartBeginner: -04- Tutorial
 
-IV -11- Schaltfläche "Handel mit Spielern" 
-IV -12- - Tabelle "Rohstoffkarten-Handel" 3x5
-IV -13- - Textfeld "Spieler mit dem Gehandelt werden soll eintragen"
-IV -14- - Tabelle "Rohstoffkarten-Handel anderer Spieler" 3x5
-IV -15- -- Schlatfläche "Handel Abschließen"
+Entweder gibt es ein strukturelles Element oder es gibt dieses strukturelle Element nicht. An dieser Stelle ist noch nicht relevant, ob es nur unter bestimmten Umständen mit Inhalten gefüllt werden soll.
 
-V -16-  Schaltfläche Tabelle "Handel mit Bank"
-V -17- - Tabelle "Handel" 3x5
-V -18- -- Schlatfläche "Handel Abschließen"
-V -19- Schaltfläche "Entwicklungkarte kaufen"
+== X ==
+---------------------------
+--- view_playingSurface ---
+---------------------------
+II nur wenn StartBeginner: -04- zuerst Eingeblende Bilddatei mit Spielerklärung (wegklickbar (Schlatfläche))
 
-VI -21- Schlatfläche "Spielregeln"
-VI -27- Text "Spielregeln"
+Hier werden mehrere Missverständnisse Ihrerseit deutlich, bzw. hier haben wir einen typischen Einsteigerfehler:
+(a) Sie haben das strukturelle Element -04- an unterschiedlichen Stellen unterschiedlich bezeichnet.
+(b) Sie schreiben hier etwas von einer Schaltfläche (also einem strukturellen Element), dass bis zu den Ansichten fehlt.
+(c) Nochmal: In der strukt.html soll einzig definiert werden, welche strukturellen Elemente wie gruppiert und wie daraus Ansichten gebildet werden. Funktionalitäten haben an dieser Stelle noch nichts verloren.
+(d) In den Definitionen der Ansichten haben strukturelle Element einzig und alleine dann etwas zu suchen, wenn sie nicht Teil einer Gruppe sind.
 
-VII -22- Schaltfläche "Zug beenden"
-VII -24- Schlatfläche "Spiel speichern
+== XI ==
+Es fehlen Log-In und Registrierung.
 
-VIII -20- Text "Baukosten"
-
-
-
+Dadurch wirkt es zurzeit so, als wollten Sie das Spiel als lokale Partie (alle Spieler an einem Rechner) umsetzen. Das ist das Gegenteil von Webbasierung.
