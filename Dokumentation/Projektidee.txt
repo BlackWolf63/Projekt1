@@ -1,6 +1,6 @@
-===========================================
-=== Projektidee BlackWolf63, 2016-04-17 ===
-===========================================
+=================================================
+=== Projektidee BlackWolf63, Stand 2016-04-17 ===
+=================================================
 
 Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
 
