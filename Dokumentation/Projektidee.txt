@@ -1,10 +1,13 @@
 ====================================================
-=== Überarbeitete Projektidee , Stand 2016-08-03 ===
+=== Überarbeitete Projektidee , Stand 2016-08-06 ===
 ====================================================
 
-Vor den Spielern liegt die Insel Catan. Sie besteht aus viereckigen Landfeldern, mit Meer rundherum. DIe Aufgabe ist es, diese Insel zu besiedeln.
+Vor den Spielern liegt die Insel Catan. Sie besteht aus viereckigen Landfeldern, mit Meer rundherum. Die Aufgabe ist es, diese Insel zu besiedeln.
 
-Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. 
+Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. Dabei ist es möglich sowas mit menschlichen als auch mit Computer-Gegner zuspielen.
+Es besteht ausserdem die Möglichkeit eine laufende Partie zu speichern und wieder zu laden.
+Letztere reagieren auf das Spielverhalten der anderen, passen so ihres an und veränderen dementsprechend ihre Handelsangebote.
+
 Alle wichtig Informationen und Karten des Spielers werden angezeigt.
 
 Es gibt zwei Startvarieanten: 
@@ -18,20 +21,22 @@ Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen:
 - Weideland erzeugt Wolle, 
 - Gebirge erzeugt Erz und 
 - Wüste erzeugt keine Erträge. 
-Landfeldern erhalten zudem eine Nummer. 
+Landfeldern erhalten zudem jeweils eine Nummer. 
 
 An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. 
 Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden.
+Die Ecken und Kanten veränderen passend die ihre Farbe, je nach dem zu welchem Spieler sie gehören.
 Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen.
 
 Am Anfang der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. 
-Die Spielfieguren der Spieler unterscheiden sich farbig
+Die Spielfieguren der Spieler unterscheiden sich dabei farbig.
 
 Zu beginn jedes Zuges werden zwei Zufallszahlen generiert und zusammen gerechenet. 
 Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
 
 Nun kann der aktive Spieler mit Mitspielern handeln. 
-Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen. 
+Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen.
+Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.  
 Außerdem kann der aktive Spieler mit der Bank handeln, Entwicklungskarten kaufen und besondere Handelsangebote der Häfen nutzen falls sie mithilfe einer Strasse angebunden hat. 
 
 Der akitver Spieler darf zudem bauen. 
