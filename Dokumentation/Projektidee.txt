@@ -1,6 +1,6 @@
-==============================================
-=== Überarbeitete Projektidee , 2016-08-06 ===
-==============================================
+=========================================
+=== aktuelle Projektidee , 2016-08-06 ===
+=========================================
 
 Vor den Spielern liegt die Insel Catan. Sie besteht aus viereckigen Landfeldern, mit Meer rundherum. Die Aufgabe ist es, diese Insel zu besiedeln.
 
