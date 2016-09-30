@@ -702,3 +702,57 @@ Hier werden mehrere Missverständnisse Ihrerseit deutlich, bzw. hier haben wir e
 Es fehlen Log-In und Registrierung.
 
 Dadurch wirkt es zurzeit so, als wollten Sie das Spiel als lokale Partie (alle Spieler an einem Rechner) umsetzen. Das ist das Gegenteil von Webbasierung.
+
+===================================
+=== Feedback Alpers, 2016-09-30 ===
+===================================
+
+Bevor Sie hier oder an der Programmierung weiter arbeiten überarbeiten Sie bitte zunächst die Projektbeschreibung. Inhaltlich hat sich dort seit April praktisch nichts getan.
+
+Insbesondere muss es möglich sein, schnell zu erkennen, wo welcher Teil der Beschreibung in der Struktur umgesetzt wird und das ist bei Ihrem Projekt zur Zeit nicht möglich.
+
+== 1.) strukturelle Elemente ==
+
+1.1.) -05- Formularfeld "Name des Spiels"
+Jedes Feld eines Formulars ist ein Formularfeld. Aber was für ein Feld ist dieses?
+
+1.2.) -06- Schalter mit Beschriftung "Spiel Beitreten"
+Es gibt bislang noch keine strukturellen Elemente, über die mögliche Spiele angezeigt werden. Also ist genügt diese Schaltfläche nicht.
+
+1.3.) -09- Unordered List "Spielstatus"
+In diser Form haben Sie eine Liste mit lauter Einträgen, die aber unübersichtlich ist und wo Sie kein eigenständiges Element haben, in das die Werte eingetragen werden. Für diesen Zweck ist eine Tabelle das passendere Mittel.
+
+1.4.) -39- textarea "Eingabefeld"
+-40- textausgabefeld? "Chatfenster"
+Mit den Mitteln, die Sie im Rahmen des Projekts zur Verfügung haben müssten Sie das als ein Formular realisieren.
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 6 / 10
+- Knappe Form (0 - 3 Pk.): 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk.: 3
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. 0 bis 5 Pk. Abzug: 0
+
+== 2.) Gruppen ==
+
+= 2.1) (Log-in Formular) =
+
+a) Der Name ist schlecht gewählt (wie bei mehreren anderen Gruppen): Wie beschrieben soll der Name einer Gruppe ein Dateiname sein.
+b) Sie haben das Formular so definiert, dass Spieler sich nicht einlogen können, ohne festzulegen, welche Art von neuer Partie sie spielen wollen.
+
+= 2.2.) (main) =
+
+Dieser Bezeichner ist in HTML ein Container. Sie sollten einen anderen Bezeichner wählen, der verdeutlicht, was der Inhalt dieser Gruppe ist.
+
+= 2.3.) (spielfeld) =
+
+Hier haben Sie nicht alle Elemente des Spielfelds aufgeführt, sondern lediglich eines.
+
+Wertung 4: Gruppierungen: 2 / 5
+- für jede sinnvolle Gruppe 1 Pk.: 5
+- Abzug wegen Bezeichnungen, die nicht als Dateiname verwendet werden können: -3
+
+== 3.) Ansichten ==
+
+Leider haben Sie bislang nur eine sinnvolle Ansicht. Damit ist gemeint, dass Sie nur in einem Fall eine Ansicht entwickelt haben, die mehrere Gruppen umfasst.
+
+Wertung 5: Ansichten: 1 / 5
+- für jede sinnvolle Ansicht 1 Pk.: 1

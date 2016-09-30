@@ -219,3 +219,99 @@ Wertung 2: Projektbeschreibung: gesamt: 4 / 10
 - Voraussetzung bekannten Wissens: 0 
 (Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
 
+===================================
+=== Feedback Alpers, 2016-09-30 ===
+===================================
+
+== 1.) Inhaltliches Feedback ==
+Leider fehlt oben an vielen Stellen die konkrete Umsetzung.
+
+= 1.1.) Beschreibung der Computergegner =
+So schreiben Sie bezüglich der Partien:
+"Dabei ist es möglich sowas mit menschlichen als auch mit Computer-Gegner zuspielen. ... Letztere reagieren auf das Spielverhalten der anderen, passen so ihres an und veränderen dementsprechend ihre Handelsangebote."
+
+Aber Sie bleiben hier an der Oberfläche: Momentan ist unklar, wie die Anpassung erfolgt, bzw. nach welchen Kriterien.
+
+= 1.2.) Beschreibung der Anzeige =
+
+Auch hier bleiben Sie bei weitem zu oberflächlich:
+"Alle wichtig Informationen und Karten des Spielers werden angezeigt."
+
+Was sind diese Informationen und Karten? Bzw. für wie viele Elemente müssen bei der Konzeption Elemente bereit gehalten werden?
+
+= 1.3.) Beschreibung des Spielstarts =
+
+"Es gibt zwei Startvarieanten: 
+- für Einsteiger, welches ein festes Spielfeld hat ..."
+
+Auch hier fehlen die für die Entwicklung des Spiels essentiellen Informationen: Wie ist das Spielfeld aufgebaut?
+
+"Am Anfang der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. ..."
+
+Wenn Sie sich die Beschreibung bis zu diesem Punkt ansehen, dann werden Sie feststellen, dass es bei Ihrer Beschreibung nichts gibt, worauf die Straßen und Siedlungen platziert werden können.
+
+= 1.4.) Voraussetzung bekannten Wissens =
+
+"Zu beginn jedes Zuges werden zwei Zufallszahlen generiert und zusammen gerechenet. 
+Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. "
+
+Hier fehlt die Information darüber, welche Zahlen und welche Rohstoffe zusammenhängen.
+
+= 1.X.) =
+
+Wenn man die Beschreibung, vom 6. August und die vom 17. April vergleicht, wird deutlich, dass Sie zwar einzelne Passagen gestrichen haben, aber ansonsten praktisch nicht an der Beschreibung gearbeitet haben. Es ist immer noch nahezu der gleiche Inhalt.
+
+Hier die Liste der relevanten Änderungen:
+
+- Anstelle von 5-eckigen haben Sie jetzt 4-eckige Spielfelder definiert. Aber Sie haben sich nicht damit auseinander gesetzt, was das für den Spielablauf bedeutet.
+
+=== Feedback bezüglich der Nutzung von Git ===
+
+Da die Änderungen der letzten zwei Monate ausgesprochen knapp ausgefallen sind, habe ich mir Ihre Historie der Änderungen angesehen.
+
+= 3. August =
+
+Hier haben Sie fünfmal in Folge einen commit/push durchgeführt, bei denen Sie jeweils Änderungen durchgeführt haben wie die Änderung eines Datums. Das ist komplett überflüssig! Ein commit/push bedeutet, dass Sie z.B. sicherheitshalber einen Zwischenstand speichern, bevor Sie umfangreiche Änderungen durchführen oder auch, dass Sie eine wichtige Änderung am Projekt durchgeführt haben, auch wenn die vielleicht nur wenige Zeilen umfasst.
+
+Die letzte Änderung an diesem Tag bestand darin, dass Sie die Spiegelstriche am Anfang jeder Zeile entfernt haben.
+
+= 6. August =
+
+Hier haben Sie ein paar neue Ideen eingefügt. Das ist ein sinnvoller commit.
+
+= 8. August =
+
+Hier haben Sie ein Datum geändert und commited. Überflüssig.
+
+= 9. August =
+
+Hier haben Sie die vollständige Auflistung der strukturellen Elemente, der Gruppen und Ansichten an den Anfang des Dokuments eingefügt. Dadurch ist leider nicht ohne umfangreiche Recherche erkennbar, was Sie gerade geändert haben.
+
+= 26. August =
+
+Fünf oder sechs Änderungen an der Bezeichnung einzelner struktureller Elementen
+
+= 1., 4., 9. September =
+
+Hinweis, dass die Änderungen noch nicht abgeschlossen sind. (je 2 commits)
+
+= 3. September =
+
+Änderungen an rund 45 strukturellen Elementen, die aber fast ausschließlich Umformulierungen wie die folgende waren:
+Aus "Schaltfläche "Spiel Starten"" wurde "Schalter mit Beschriftung "Spiel Starten""
+was beides das selbe ist.
+
+= 14. September =
+
+Praktisch alle Einträge in der strukt.html wurden gelöscht und vollständig neu wieder eingefügt. Dabei wurden auch die Nummerierungen geändert, obwohl Sie genau das nicht tun sollten.
+
+=== Zusammenfassung ===
+
+Zurzeit haben Sie eine Projektbeschreibung, bei der kaum erkennbar ist, wie sich die einzelnen Teile in der Struktur wiederfinden.
+Außerdem ist erkennbar, dass Sie bislang kaum etwas konkret ausgearbeitet haben, das nicht auch so oder nahezu in dieser Form im Brettspiel steckt.
+Sie haben zwar an der Struktur gearbeitet, aber aufgrund der Art, wie Sie das getan haben ist kaum erkennbar, wo welche Änderungen durchgeführt wurden.
+Und obwohl Sie Gruppen definiert haben, haben Sie noch keine Zeile Quellcode entwickelt.
+
+Deshalb nochmal der ganz klare Hinweis:
+
+Ein Softwareprojekt wird heute praktisch immer so entwickelt, dass ständig an allen Teilen des Projekts Änderungen erfolgen. Ein Ablauf wie beim sogenannten Wasserfallmodell, bei dem immer nur an einer Phase gearbeitet wird, nach deren Abschluss die nächste Phase begonnen wird gibt es heute nur noch im Ingenieursbereich. In der Medieninformatik ist dieser Ansatz praktisch nicht existent. Sie müssen sich daran gewöhnen, immer wieder zu früheren Stellen eines Projekts zurück zu kehren, dort Änderungen auszuführen und auch die aus diesen Änderungen resultierenden Änderungen an anderer Stelle eines Projekts umzusetzen.
