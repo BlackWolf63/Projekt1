@@ -1,6 +1,204 @@
 =============================================
-=== aktuelle sturk.html, Stand 2016-14-09 ===
+=== aktuelle sturk.html, Stand 2016-03-11 ===
 =============================================
+Siedler von Cartan
+
+strukturellen Elemente
+
+-01- input type text "Username eintragen"
+-02- input type text "Password eintragen"
+-03- button "Einloggen"
+-04- input type email "Email eingeben"
+-05- Hyperlink "Regeln"
+-06- Hyperlink "Brettspiel"
+-07- Hyperlink "English"
+-08- Hyperlink "Impressum"
+-09- tabel "Verfügbare Spiele" (2 x ?)
+-10- input type text "Name des Spiels"
+-11- button "Spiel beitreten"
+-12- drop-down-Liste "Anzahl von Spielern"
+-13- radio buttons "Startaufstellung für Einsteiger oderStartaufstellung für Fortgeschrittene"
+-14- tabel "Spiel Status" (3 x 1)
+-15- tabel "Spielfeld" (? x ?)
+-16- tabel "Status des Spielers" (2 x 13)
+-17- ing "Entwicklungkarte"
+-18- button "Nächste Entwicklungskarte"
+-19- button "Vorhierge Entwicklungskarte"
+-20- button "Karte auspielen"
+-21- input type text "Chatfenster"
+-22- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
+-23- Drop-Down-Liste "Rohstofftyp"
+-24- Drop-Down-Liste "Rohstoffanzahl"
+-25- Drop-Down-Liste "Rohstofftyp"
+-26- Drop-Down-Liste "Rohstoffanzahl"
+-27- button "Handel vorschlagen"
+-28- button "Handel annehmen"
+
+
+Gruppen
+
+(Log-in Formular)
+I -01- Formularfeld "Bitte Spieler Namen eintragen"
+I -02- Radio Buttons (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
+I -03- Schalter mit Beschriftung "Spiel Starten"
+I -04- Drop-Down-Liste "Anzahl der Spieler"
+I -05- Formularfeld "Name des Spiels"
+I -06- Schalter mit Beschriftung "Spiel Beitreten"
+
+(div "Spielstatus")
+II -09- Unordered List "Spielstatus"
+II -10- Listenpunkt "Zahl "Würfelwurf""
+II -11- Listenpunkt "Name des Spielers der am Zug ist" 
+II -12- Listenpunkt "momentane Rundenzahl"
+II -36- Schalter mit Beschriftung "Zug beenden"
+II -37- Schalter mit Beschriftung "Spiel speichern"
+II -38- Schalter mit Beschriftung "Spiel Beitreten"
+
+(main)
+III -07- summary "Tutorial"
+III -08- details (Tutorialtext)
+III -34 summary "Baukosten"
+III -35- details (Auflistung der Baukosten)
+
+(spielfeld)
+IV -13- viereckiges Feld indem jeweils ein Rohstofftyp sowie eine Zahl steht (Wie kann man Eingabemöglichkeiten darin einbinden?)
+
+(Formular/Tabelle "Status des Spielers")
+V -14- Unordered List "Status des Spielers"
+V -15- Listenpunkt "Name und Farbe des Spielers"
+V -16- Listenpunkt "am Zug/nicht am Zug"
+V -17- Listenpunkt "Anzahl Siegpunkte"
+V -18- Listenpunkt "Anzahl der Strassen und Siedlungen in Besitzt"
+V -19- Listenpunkt "Verbundene Rohstoffe"
+V -20- Listenpunkt "Anzahl und Type Rohstoffkarten in Besitz"
+V -21- Listenpunkt "Entwicklungskarten in Besitz"
+V -22- img "Entwicklungskarte"
+V -23- Schalter mit Beschriftung "Nächste Entwicklungskarte"
+V -24- Schalter mit Beschriftung "Vorherige Entwicklungskarte"
+V -25- Schalter mit Beschriftung "Karte Ausspielen"
+
+(Formular "Handel mit Spielern")
+VI -26- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
+VI -27- Drop-Down-Liste "Rohstofftyp"
+VI -28- Drop-Down-Liste "Rohstoffanzahl"
+VI -27- Drop-Down-Liste "Rohstofftyp"
+VI -28- Drop-Down-Liste "Rohstoffanzahl"
+VI -29- Schalter mit Beschriftung "Handel vorschlagen"
+VI -30- Schalter mit Beschriftung "Handel annehmen"
+
+(Formular "Handel mit Bank")
+VII -27- Drop-Down-Liste "Rohstofftyp"
+VII -28- Drop-Down-Liste "Rohstoffanzahl"
+VII -31- Schalter mit Beschriftung "Handel Abschließen"
+VII -32- p "Kosten"
+VII -22- img "Entwicklungskarte"
+VII -23- Schalter mit Beschriftung "Nächste Entwicklungskarte"
+VII -24- Schalter mit Beschriftung "Vorherige Entwicklungskarte"
+VII -33- Schalter mit Beschriftung "Entwicklungkarte kaufen"
+
+(Formular "chat")
+VIII -39- textarea "Eingabefeld"
+VIII -40- textausgabefeld? "Chatfenster"
+
+
+
+=======
+Ansichten
+
+
+------------------
+--- view_index ---
+------------------
+
+(Log-in Formular)
+I -01- Formularfeld "Bitte Spieler Namen eintragen"
+I -02- Radio Buttons (Auswahl zwischen "Startaufstellung für Einsteiger" und "Startaufstellung für Fortgeschrittene")
+I -03- Schalter mit Beschriftung "Spiel Starten"
+I -04- Drop-Down-Liste "Anzahl der Spieler"
+I -05- Formularfeld "Name des Spiels"
+I -06- Schalter mit Beschriftung "Spiel Beitreten"
+
+
+---------------------------
+--- view_playingSurface ---
+---------------------------
+
+(div "Spielstatus")
+II -09- Unordered List "Spielstatus"
+II -10- Listenpunkt "Zahl "Würfelwurf""
+II -11- Listenpunkt "Name des Spielers der am Zug ist" 
+II -12- Listenpunkt "momentane Rundenzahl"
+II -36- Schalter mit Beschriftung "Zug beenden"
+II -37- Schalter mit Beschriftung "Spiel speichern"
+II -38- Schalter mit Beschriftung "Spiel Beitreten"
+
+(main)
+III -07- summary "Tutorial"
+III -08- details (Tutorialtext)
+III -34 summary "Baukosten"
+III -35- details (Auflistung der Baukosten)
+
+(spielfeld)
+IV -13- viereckiges Feld indem jeweils ein Rohstofftyp sowie eine Zahl steht (Wie kann man Eingabemöglichkeiten darin einbinden?)
+
+(Formular/Tabelle "Status des Spielers")
+V -14- Unordered List "Status des Spielers"
+V -15- Listenpunkt "Name und Farbe des Spielers"
+V -16- Listenpunkt "am Zug/nicht am Zug"
+V -17- Listenpunkt "Anzahl Siegpunkte"
+V -18- Listenpunkt "Anzahl der Strassen und Siedlungen in Besitzt"
+V -19- Listenpunkt "Verbundene Rohstoffe"
+V -20- Listenpunkt "Anzahl und Type Rohstoffkarten in Besitz"
+V -21- Listenpunkt "Entwicklungskarten in Besitz"
+V -22- img "Entwicklungskarte"
+V -23- Schalter mit Beschriftung "Nächste Entwicklungskarte"
+V -24- Schalter mit Beschriftung "Vorherige Entwicklungskarte"
+V -25- Schalter mit Beschriftung "Karte Ausspielen"
+
+(Formular "chat")
+VIII -39- textarea "Eingabefeld"
+VIII -40- textausgabefeld? "Chatfenster"
+
+---------------------------
+--- view_tradingPlayers ---
+---------------------------
+
+(Formular "Handel mit Spielern")
+VI -26- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
+VI -27- Drop-Down-Liste "Rohstofftyp"
+VI -28- Drop-Down-Liste "Rohstoffanzahl"
+VI -27- Drop-Down-Liste "Rohstofftyp"
+VI -28- Drop-Down-Liste "Rohstoffanzahl"
+VI -29- Schalter mit Beschriftung "Handel vorschlagen"
+VI -30- Schalter mit Beschriftung "Handel annehmen"
+
+
+------------------------
+--- view_tradingGame ---
+------------------------
+
+(Formular "Handel mit Bank")
+VII -27- Drop-Down-Liste "Rohstofftyp"
+VII -28- Drop-Down-Liste "Rohstoffanzahl"
+VII -31- Schalter mit Beschriftung "Handel Abschließen"
+VII -32- p "Kosten"
+VII -22- img "Entwicklungskarte"
+VII -23- Schalter mit Beschriftung "Nächste Entwicklungskarte"
+VII -24- Schalter mit Beschriftung "Vorherige Entwicklungskarte"
+VII -33- Schalter mit Beschriftung "Entwicklungkarte kaufen"
+
+
+
+
+
+
+
+
+
+
+====================================
+=== sturk.html, Stand 2016-14-09 ===
+====================================
 
 Siedler von Cartan
 
