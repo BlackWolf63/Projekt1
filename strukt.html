@@ -42,6 +42,8 @@ strukturellen Elemente
 -35- button "Abschicken"
 -36- Drop-Down-Liste "Gespeicherte Spiele"
 -37- button "Spiel laden"
+-38- button "Entwicklungskarte kaufen"
+-38- Drop-Down-Liste "Entwicklungskarten"
 
 
 Gruppen
@@ -88,38 +90,37 @@ X -18- button "Nächste Entwicklungskarte"
 X -19- button "Vorhierge Entwicklungskarte"
 X -20- button "Karte auspielen"
 
-XI (Formular Entwicklungskarte kaufen)
-X "Formular Entwicklungskarte spielen"
+XI (Formular Chat)
+XI -21- input type text "Chatfenster"
+XI -35- button "Abschicken"
 
-XII (Formular Chat)
-XII -21- input type text "Chatfenster"
-XII -35- button "Abschicken"
+XII (Formular Handel mit Spieler)
+XII -22- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
+XII -23- Drop-Down-Liste "Rohstofftyp" (x2)
+XII -24- Drop-Down-Liste "Rohstoffanzahl" (x2)
+XII -38- Drop-Down-Liste "Entwicklungskarten im besitzt" (x2)
+XII -25- button "Handel vorschlagen"
+XII -26- button "Handel annehmen"
 
-XIII (Formular Handel mit Spieler)
-XIII -22- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
-XIII -23- Drop-Down-Liste "Rohstofftyp"
-XIII -24- Drop-Down-Liste "Rohstoffanzahl"
-XIII -25- button "Handel vorschlagen"
-XIII -26- button "Handel annehmen"
+XIII (Formular Handel mit Bank)
+XII "Formular Handel mit Spieler" ( - "-22-" und "-25-")
+XIII -27- p "Kosten"
+XIII -38- button "Entwicklungskarte kaufen"
 
-XIV (Formular Handel mit Bank)
-XIII "Formular Handel mit Spieler" ( - "-22-" und "-25-")
-XIV -27- p "Kosten"
+XIV (Regeln)
+XIV -28- summery "Tutorial"
+XIV -29- details (Tutorialtext)
+XIV -30- summary "Baukosten"
+XIV -31- details (Auflistung der Baukosten)
 
-XV (Regeln)
-XV -28- summery "Tutorial"
-XV -29- details (Tutorialtext)
-XV -30- summary "Baukosten"
-XV -31- details (Auflistung der Baukosten)
+XV (Impressum u.Ä.)
+XV -32- p "Impressum"
+XV -33- p "Regeln"
+XV -34- p "Baukosten"
 
-XVI (Impressum u.Ä.)
-XVI -32- p "Impressum"
-XVI -33- p "Regeln"
-XVI -34- p "Baukosten"
-
-XVII (Spiel laden)
-XVII -36- Drop-Down-Liste "Gespeicherte Spiele"
-XVII -37- button "Spiel laden"
+XVI (Spiel laden)
+XVI -36- Drop-Down-Liste "Gespeicherte Spiele"
+XVI -37- button "Spiel laden"
 
 
 =======
@@ -162,9 +163,9 @@ V "Formular Spiel Beitreten"
 VI -12- drop-down-Liste "Anzahl von Spielern"
 VI -13- radio buttons "Startaufstellung für Einsteiger oderStartaufstellung für Fortgeschrittene"
 
-XVII (Spiel laden)
-XVII -36- Drop-Down-Liste "Gespeicherte Spiele"
-XVII -37- button "Spiel laden"
+XVI (Spiel laden)
+XVI -36- Drop-Down-Liste "Gespeicherte Spiele"
+XVI -37- button "Spiel laden"
 
 III (Footer Zusatzinformationen)
 III -05- Hyperlink "Regeln"
@@ -192,29 +193,28 @@ X -18- button "Nächste Entwicklungskarte"
 X -19- button "Vorhierge Entwicklungskarte"
 X -20- button "Karte auspielen"
 
-XI (Formular Entwicklungskarte kaufen)
-X "Formular Entwicklungskarte spielen"
+XI (Formular Chat)
+XI -21- input type text "Chatfenster"
+XI -35- button "Abschicken"
 
-XII (Formular Chat)
-XII -21- input type text "Chatfenster"
-XII -35- button "Abschicken"
+XII (Formular Handel mit Spieler)
+XII -22- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
+XII -23- Drop-Down-Liste "Rohstofftyp" (x2)
+XII -24- Drop-Down-Liste "Rohstoffanzahl" (x2)
+XII -38- Drop-Down-Liste "Entwicklungskarten im besitzt" (x2)
+XII -25- button "Handel vorschlagen"
+XII -26- button "Handel annehmen"
 
-XIII (Formular Handel mit Spieler)
-XIII -22- Drop-Down-Liste "Spieler mit dem Gehandelt werden soll"
-XIII -23- Drop-Down-Liste "Rohstofftyp"
-XIII -24- Drop-Down-Liste "Rohstoffanzahl"
-XIII -25- button "Handel vorschlagen"
-XIII -26- button "Handel annehmen"
+XIII (Formular Handel mit Bank)
+XII "Formular Handel mit Spieler" ( - "-22-" und "-25-")
+XIII -27- p "Kosten"
+XIII -38- button "Entwicklungskarte kaufen"
 
-XIV (Formular Handel mit Bank)
-XIII "Formular Handel mit Spieler" ( - "-22-" und "-25-")
-XIV -27- p "Kosten"
-
-XV (Regeln)
-XV -28- summery "Tutorial"
-XV -29- details (Tutorialtext)
-XV -30- summary "Baukosten"
-XV -31- details (Auflistung der Baukosten)
+XIV (Regeln)
+XIV -28- summery "Tutorial"
+XIV -29- details (Tutorialtext)
+XIV -30- summary "Baukosten"
+XIV -31- details (Auflistung der Baukosten)
 
 III (Footer Zusatzinformationen)
 III -05- Hyperlink "Regeln"
@@ -227,10 +227,10 @@ III -08- Hyperlink "Impressum"
 --- view_imprintAndrules ---
 ----------------------------
 
-XVI (Impressum u.Ä.)
-XVI -32- p "Impressum"
-XVI -33- p "Regeln"
-XVI -34- p "Baukosten"
+XV (Impressum u.Ä.)
+XV -32- p "Impressum"
+XV -33- p "Regeln"
+XV -34- p "Baukosten"
 
 III (Footer Zusatzinformationen)
 III -05- Hyperlink "Regeln"
