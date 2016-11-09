@@ -1,6 +1,174 @@
-=========================================
-=== aktuelle Projektidee , 2016-08-06 ===
-=========================================
+===============================================
+=== aktuelle Projektidee , stand 2016-09-11 ===
+===============================================
+
+Spielregeln:
+
+Vor den Spielern liegt die Insel Catan. Die Aufgabe ist es, diese rundenweise Insel zu besiedeln. Dabei erhalten sie Punkte und wer als erster 10 Punkte erhalten hat, hat gewonnen.
+
+
+Es gibt 6 verschiedene Landschaftentypen auf der Insel die verschiedene Rohstoffe erzeugen: 
+- Wald erzeugt Holz, 
+- Ackerland erzeugt Getreide, 
+- Hügelland erzeugt Lehm, 
+- Weideland erzeugt Wolle, 
+- Gebirge erzeugt Erz und 
+- Wüste erzeugt keine Erträge.
+18 rechteckige, kreisförmig angeorten Landschaftenfeldern bilden das Spielfeld umgeben von Meer.
+Daraus ergibt sie ein solches Muster:   
+         ___ ___
+        | x | x |
+     ___|___|___|___ 
+    | x | x | x | x |
+ ___|___|___|___|___|___
+| x | x | x | x | x | x |
+|___|___|___|___|___|___|
+    | x | x | x | x |
+    |___|___|___|___|
+        | x | x |
+        |___|___|
+
+An jedem "X" befindet sich eine Landschaftfeld.
+Auf einen zufälligen Feld befindet sich zudem der Räuber.
+
+Die Spieler können nun an den "Ecken" der Landschaftsfelder Siedlungen plazieren. Z.B.:
+
+         ___ ___
+        |   |   |
+     ___|___x___|___ 
+    |   |   |   |   |
+ ___|___|___|___|___x___
+|   |   |   |   |   |   |
+|___|___x___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+
+Außerdem können, angrenzent zu einer Siedlung im Besitz des Spielers, Straßen auf den "Kanter der Landschaftsfelder plaziert werden. Beispeil (x = Siedlung, --- = eine Straße)
+
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   |
+ ___|___x---|___|___|___
+|   |   |   |   |   |   |
+|___|___|___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+        
+An dem manchen "Kanten" zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen.
+Beispiel: x = Siedlung, --- = eine Straße, h = Hafen, H = nutzbarer Hafen
+         _h_ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   h
+ ___|___|___|___|___|___
+h   |   |   |   |   |   |
+|___|___|___|___|___|___|
+    h   |   |   |   |
+    |___|___x---|-H-|
+        |   |   | 
+        |___|___|
+
+
+Den Landschaftsfeldern sind 6 unterschiedliche Wahrscheinlichkeiten, von sehr häufig bis sehr selten, zugeortnet die die Spieler den Felder, durch farbliche makierung, ablesen können.
+Zu beginn jedes Zuges werden zufällig Landschaftsfelder ausgewählt die Rohstoffe erschütten. Felder mit einer höherer Wahrscheinlichkeit geben natürlich im Durchschnitt häufiger Rohstoffe.
+Ein Spieler erhält Rohstoffe von einem Landschaftsfelder falls er eine Siedlung hat die an ein solches grenzt. Zum Beispiel kann die Siedlung "X" von allen mit "r" makierten Feldern Rohstoffe erhalten:
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   | r | r |   |
+ ___|___|___x___|___|___
+|   |   | r | r |   |   |
+|___|___|___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+        
+Zur Beginn der Partie dürfen die Spieler jeweils 2 Siedlung und 2 Straßen plazieren. Die Spielfieguren der Spieler unterscheiden sich dabei farbig.
+Danach beginnt jede Runde mit der Rohstoffauschüttung, wie oben beschrieben, für alle Spieler.
+Sonderfall: Mit zweit größter Häufigkeit erhält kein Spieler Rohstoffe sondern der Räuber wird aktiv. Alle Spieler, die mehr als 7 Rohstoffe besitzen, verlieren die Hälfte ihrer Rohstoffe. Bei ungeraden Zahlen wird zu Gunsten des betroffenen Spielers abgerundet (wer z. B. 9 Rohstoffe hat, verliernt 4 davon). Der Räuber raubt eine zufällige der, zu dem Landschaftsfeld auf dem er sich befindet, angrenzende Siedlung aus. Das bedeutet das der Besitzer dieser Siedlung einen weitere zufälligen Rohstoff verliert und dieser an den akitven Spieler übertragen wird.
+
+Der aktive Spieler darf dann Mitspielern und der Bank handeln, Entwicklungskarten spielen und bauen.
+
+Mit Mitspielern können alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen.
+Mit der Bank können Rohstoffe 4 zu 1 gehandelt werden, d.h. 4 gleiche Rohstoffe für einen belieben anderen (z.B. 4 Holz für ein Lehm).
+An dem manchen "Kanten" zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen (z.B. 3 zu 1 für alle Rohstoffe, 2:1 für Weizen, etc.)
+Beispiel: x = Siedlung, --- = eine Straße, h = Hafen, H = nutzbarer Hafen
+         _h_ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   h
+ ___|___|___|___|___|___
+h   |   |   |   |   |   |
+|___|___|___|___|___|___|
+    h   |   |   |   |
+    |___|___x---|-H-|
+        |   |   | 
+        |___|___|
+        
+Außerdem kann er eine zufällige Entwickungskarten von der Bank für ein Erz + ein Wolle + ein Getreide kaufen. Es gibt drei Arten von Entwicklungskarten: Ritter, Fortschritt und Siegpunkte.
+Ritter: Wer eine Ritterkarte ausspielt, versetzt den Räuber auf ein zufälliges anders Feld. Wer mindestens 3 Ritterkarten und mehr Ritterkarten als aller anderen ausgespielt hat, erhält zu dem die Sonderkarte "Rittermacht", diese ist 2 Punkte wert.
+Erfindung: Der Spieler erhält 2 zufällige Rohstoffe.
+Monopol: Der Spieler erhällt alle Rohstoffe eines der Karte genanntes Typs von seinen Mitspielern.  Wer keinen solchen Rohstoff besitzt, muss auch nichts abgeben.
+Siegpunkte: Diese geben einen Punkt.
+
+Der akitver Spieler darf zudem bauen. 
+Für einen Lehm und ein Holz kann der eine Straße nach den oben gannten Regel platziern. 
+Der Spieler der die längste zusammenhängende Straße besitzt erhält den Bonus "Längste Handelsstraße". Dieser ist 2 Siegpunkte wert
+Weitere Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die neue Siedlung ist mindestens 2 "Kanten" weit entfernt von jeder anderen. Jede Siedlung ist 1 Punkt wert.
+(x = Siedlung, --- = eine Straße, b = geeigenter Bauplatz für eine neue Siedlung, S = Siedlung ander Spieler)
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   |
+ ___|---|---x---|---b___
+|   |   |   |   |   |   |
+|___S___|___|___|___|___|
+    |   |   |   |   |
+    |___|___S___|___|
+        |   |   |
+        |___|___|
+
+
+Eine Siedlung kann zu einer Stadt ausgebaut werden, für 3 x Erz + 2 x Getreide. 
+Diese ist 2 Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
+
+Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen.
+
+
+
+Seitenfunktionen:
+
+Spieler können sich über die Startseite registieren bzw. einloggen.
+Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie mit einer festen Spieleranzahl zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
+
+Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen Spielfunktionen, noch weitere Dinge angezeigt:
+- Der Status der Partie: Name des Spielers der am Zug ist, Rundenanzahl, die Möglichkeit das Spiel zu speichern.
+- Ihr eigener Status: Name des Spielers, am Zug?, meine Farbe, Punktanzahl, Straßen, in Besitz, Verbundne Rohstoffe, Anzahl Siedlungen, Anzahl Städte, Rohstoffe und Anzahl im Besitz
+- Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.
+- Eine Zusammenfassung der Spielregeln in einem Tutorial und der Baukosten
+
+Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, den vollständigen Spielregeln und auflisten aller Baukosten, sowie die Siete des originalen Brettspiels als auch einer Version der Seite auf Englisch zuzugreifen.
+
+
+
+
+
+
+
+
+
+================================
+=== Projektidee , 2016-08-06 ===
+================================
 
 Vor den Spielern liegt die Insel Catan. Sie besteht aus viereckigen Landfeldern, mit Meer rundherum. Die Aufgabe ist es, diese Insel zu besiedeln.
 
