@@ -1,6 +1,8 @@
-===============================================
-=== aktuelle Projektidee , stand 2016-09-11 ===
-===============================================
+=========================================
+=== aktuelle Projektidee , 2016-10-11 ===
+=========================================
+
+Siedler von Catan - Webversion
 
 Spielregeln:
 
@@ -148,7 +150,11 @@ Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen.
 Seitenfunktionen:
 
 Spieler können sich über die Startseite registieren bzw. einloggen.
-Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie mit einer festen Spieleranzahl zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
+Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
+Beim erstellen einer neuen Partie wird zwischen zwei Startvarieanten gewählt:
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+Außerdem wird die Spieleranzahl festgelegt. In jeden dieser "Plätze", der nicht von einem menschlichen Mitspieler übernommen wird, wird automatisch ein Computer-Gegner eingefügt. Diese versuchen ihre Siedlungen anhand der verschieden Wahrscheinlichkeiten und Häfen möglichst strategisch gut zu plaziern, verteidigen sich, durch den Kauf von Entwicklungskarten, gegen den Räuber, handeln mit der Bank um fehlende Rohstoffe zu bekommen, handeln mit den anderen Spielern um eventuell günstiere Angebote als mit der Bank zu bekommen und "feilschen" dabei auch (d.h. verändern ihre Angebote möglichst viele Rohstoffe zu bekommen/möglichst wenigst wenig Rohstoffe zu bezahlen) und versuchen möglichst schnell möglichst viele Punkte zu erhalten.
 
 Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen Spielfunktionen, noch weitere Dinge angezeigt:
 - Der Status der Partie: Name des Spielers der am Zug ist, Rundenanzahl, die Möglichkeit das Spiel zu speichern.
@@ -156,7 +162,7 @@ Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen
 - Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.
 - Eine Zusammenfassung der Spielregeln in einem Tutorial und der Baukosten
 
-Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, den vollständigen Spielregeln und auflisten aller Baukosten, sowie die Siete des originalen Brettspiels als auch einer Version der Seite auf Englisch zuzugreifen.
+Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, den vollständigen Spielregeln und Auflistung aller Baukosten, sowie die Seite des originalen Brettspiels als auch einer Version der Seite auf Englisch, zuzugreifen.
 
 
 
