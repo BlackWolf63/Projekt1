@@ -1,10 +1,63 @@
 =========================================
-=== aktuelle Projektidee , 2016-10-11 ===
+=== aktuelle Projektidee , 2016-11-11 ===
 =========================================
 
 Siedler von Catan - Webversion
 
-Spielregeln:
+Inhalte:
+
+Vor den Spielern liegt die Insel Catan. Die Aufgabe ist es, diese rundenweise Insel zu besiedeln.
+
+Das Spielfeld besteht dabei aus Landschafts-, Weg- und Kreuzungsfeldern.
+Landschaften generiern Rohstoffe, wenn sie ein Spieler angebunden hat und somit ernten kann. Die Ausschüttung ist dabei von auf den Feldern festgesetzeten Wahrscheinlichkeiten abhängig.
+Die Rohstoffe können von den Spielern zum Bau oder zum Handel genutzt werden.
+Handel kann unter den Spieler als auch mit der Bank betrieben werden.
+Der Bau ermöglicht es Spielern neue/mehr Landschaften und somit Rohstoffe zu erschließen.
+Auf dem Spielfeld findet sich außerdem ein Räuber, der mit eine gewissen Wahrscheinlichkeit in Aktion tritt und das Spielgeschehen "stört".
+Zudem ist es möglich Entwicklungskarten zu erwerben und zu spielen. Diese Sorgen für vorbestimmte, auf ihnen beschriebene Sondereffekte. 
+Mit den Aktionen im Spiel verdienen die Spieler Punkte und der Spieler der als erstes eine feste Punktzahl erreicht, ist der Gewinner.
+
+Spieler können sich über die Startseite registieren bzw. einloggen.
+Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
+Beim erstellen einer neuen Partie wird zwischen zwei Startvarieanten gewählt:
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+Außerdem wird die Spieleranzahl festgelegt. In jeden dieser "Plätze", der nicht von einem menschlichen Mitspieler übernommen wird, wird automatisch ein Computer-Gegner eingefügt. Diese versuchen ihre Siedlungen anhand der verschieden Wahrscheinlichkeiten und Häfen möglichst strategisch gut zu plaziern, verteidigen sich, durch den Kauf von Entwicklungskarten, gegen den Räuber, handeln mit der Bank um fehlende Rohstoffe zu bekommen, handeln mit den anderen Spielern um eventuell günstiere Angebote als mit der Bank zu bekommen und "feilschen" dabei auch (d.h. verändern ihre Angebote möglichst viele Rohstoffe zu bekommen/möglichst wenigst wenig Rohstoffe zu bezahlen) und versuchen möglichst schnell möglichst viele Punkte zu erhalten.
+
+Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen Spielfunktionen, noch weitere Dinge angezeigt:
+- Der Status der Partie: Name des Spielers der am Zug ist, Rundenanzahl, die Möglichkeit das Spiel zu speichern.
+- Ihr eigener Status: Name des Spielers, am Zug?, meine Farbe, Punktanzahl, Straßen, in Besitz, Verbundne Rohstoffe, Anzahl Siedlungen, Anzahl Städte, Rohstoffe und Anzahl im Besitz
+- Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.
+- Eine Zusammenfassung der Spielregeln in einem Tutorial und der Baukosten
+
+Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, ein Forum, die vollständigen Spielregeln und eine Auflistung aller Baukosten, sowie die Seite des originalen Brettspiels als auch einer Version der Seite auf Englisch, zuzugreifen.
+
+Auf das Impressum, das Forum, und die Startseite kann jeder zugreifen, auch ohne einen Account. Dort kann man sich auch überall einloggen.
+
+Zusammenfassung:
+Spielfeld
+- Landschafensfelder
+- Wegfelder
+- Kreuzungsfelder
+- Räuber
+Rohstoffe
+Handel
+Bau
+Punkte
+Registierung/Log-in
+Partie beitreten/erstellen/laden
+Computer-Gegener
+Status der Partie/des Spielers
+Chat
+Impressum
+Forum
+Regeln
+
+
+
+
+Abläufe:
+
 
 Vor den Spielern liegt die Insel Catan. Die Aufgabe ist es, diese rundenweise Insel zu besiedeln. Dabei erhalten sie Punkte und wer als erster 10 Punkte erhalten hat, hat gewonnen.
 
@@ -17,6 +70,7 @@ Es gibt 6 verschiedene Landschaftentypen auf der Insel die verschiedene Rohstoff
 - Gebirge erzeugt Erz und 
 - Wüste erzeugt keine Erträge.
 18 rechteckige, kreisförmig angeorten Landschaftenfeldern bilden das Spielfeld umgeben von Meer.
+Zwischen den Landschaftsfeldern befinden sich Wegfelder und jeweils zwischen zwei Wegfelder befindet sich ein Kreuzungsfeld.
 Daraus ergibt sie ein solches Muster:   
          ___ ___
         | x | x |
@@ -30,10 +84,13 @@ Daraus ergibt sie ein solches Muster:
         | x | x |
         |___|___|
 
-An jedem "X" befindet sich eine Landschaftfeld.
+                                               " | "
+An jedem "X" befindet sich eine Landschaftfeld,  |  oder "___" steht jeweils für ein Wegfeld und die Lücken zwischen den Wegfeldern/dort wo jeweils zwei oder mehr Wegfelder auf ein ander treffen, steht für ein Kreuzungsfeld.
 Auf einen zufälligen Feld befindet sich zudem der Räuber.
 
-Die Spieler können nun an den "Ecken" der Landschaftsfelder Siedlungen plazieren. Z.B.:
+
+
+Die Spieler können nun auf den Kreuzungsfeldern Siedlungen plazieren. Z.B.:
 
          ___ ___
         |   |   |
@@ -47,7 +104,7 @@ Die Spieler können nun an den "Ecken" der Landschaftsfelder Siedlungen plaziere
         |   |   |
         |___|___|
 
-Außerdem können, angrenzent zu einer Siedlung im Besitz des Spielers, Straßen auf den "Kanter der Landschaftsfelder plaziert werden. Beispeil (x = Siedlung, --- = eine Straße)
+Außerdem können, angrenzent zu einer Siedlung im Besitz des Spielers, Straßen auf den Wegfeldern plaziert werden. Beispeil (x = Siedlung, --- = eine Straße)
 
          ___ ___
         |   |   |
@@ -59,20 +116,6 @@ Außerdem können, angrenzent zu einer Siedlung im Besitz des Spielers, Straßen
     |   |   |   |   |
     |___|___|___|___|
         |   |   |
-        |___|___|
-        
-An dem manchen "Kanten" zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen.
-Beispiel: x = Siedlung, --- = eine Straße, h = Hafen, H = nutzbarer Hafen
-         _h_ ___
-        |   |   |
-     ___|___|___|___ 
-    |   |   |   |   h
- ___|___|___|___|___|___
-h   |   |   |   |   |   |
-|___|___|___|___|___|___|
-    h   |   |   |   |
-    |___|___x---|-H-|
-        |   |   | 
         |___|___|
 
 
@@ -99,7 +142,7 @@ Der aktive Spieler darf dann Mitspielern und der Bank handeln, Entwicklungskarte
 
 Mit Mitspielern können alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen.
 Mit der Bank können Rohstoffe 4 zu 1 gehandelt werden, d.h. 4 gleiche Rohstoffe für einen belieben anderen (z.B. 4 Holz für ein Lehm).
-An dem manchen "Kanten" zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen (z.B. 3 zu 1 für alle Rohstoffe, 2:1 für Weizen, etc.)
+An manchen Wegfeldern zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen.
 Beispiel: x = Siedlung, --- = eine Straße, h = Hafen, H = nutzbarer Hafen
          _h_ ___
         |   |   |
@@ -123,7 +166,7 @@ Der akitver Spieler darf zudem bauen.
 Für einen Lehm und ein Holz kann der eine Straße nach den oben gannten Regel platziern. 
 Der Spieler der die längste zusammenhängende Straße besitzt erhält den Bonus "Längste Handelsstraße". Dieser ist 2 Siegpunkte wert
 Weitere Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
-Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die neue Siedlung ist mindestens 2 "Kanten" weit entfernt von jeder anderen. Jede Siedlung ist 1 Punkt wert.
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die neue Siedlung ist mindestens 2 Wegfelder weit entfernt von jeder anderen. Jede Siedlung ist 1 Punkt wert.
 (x = Siedlung, --- = eine Straße, b = geeigenter Bauplatz für eine neue Siedlung, S = Siedlung ander Spieler)
          ___ ___
         |   |   |
@@ -144,29 +187,6 @@ Diese ist 2 Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohs
 Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
 
 Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen.
-
-
-
-Seitenfunktionen:
-
-Spieler können sich über die Startseite registieren bzw. einloggen.
-Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
-Beim erstellen einer neuen Partie wird zwischen zwei Startvarieanten gewählt:
-- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
-- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
-Außerdem wird die Spieleranzahl festgelegt. In jeden dieser "Plätze", der nicht von einem menschlichen Mitspieler übernommen wird, wird automatisch ein Computer-Gegner eingefügt. Diese versuchen ihre Siedlungen anhand der verschieden Wahrscheinlichkeiten und Häfen möglichst strategisch gut zu plaziern, verteidigen sich, durch den Kauf von Entwicklungskarten, gegen den Räuber, handeln mit der Bank um fehlende Rohstoffe zu bekommen, handeln mit den anderen Spielern um eventuell günstiere Angebote als mit der Bank zu bekommen und "feilschen" dabei auch (d.h. verändern ihre Angebote möglichst viele Rohstoffe zu bekommen/möglichst wenigst wenig Rohstoffe zu bezahlen) und versuchen möglichst schnell möglichst viele Punkte zu erhalten.
-
-Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen Spielfunktionen, noch weitere Dinge angezeigt:
-- Der Status der Partie: Name des Spielers der am Zug ist, Rundenanzahl, die Möglichkeit das Spiel zu speichern.
-- Ihr eigener Status: Name des Spielers, am Zug?, meine Farbe, Punktanzahl, Straßen, in Besitz, Verbundne Rohstoffe, Anzahl Siedlungen, Anzahl Städte, Rohstoffe und Anzahl im Besitz
-- Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.
-- Eine Zusammenfassung der Spielregeln in einem Tutorial und der Baukosten
-
-Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, den vollständigen Spielregeln und Auflistung aller Baukosten, sowie die Seite des originalen Brettspiels als auch einer Version der Seite auf Englisch, zuzugreifen.
-
-
-
-
 
 
 
