@@ -1,0 +1,556 @@
+=========================================
+=== aktuelle Projektidee , 2016-11-11 ===
+=========================================
+
+Siedler von Catan - Webversion
+
+Inhalte:
+
+Vor den Spielern liegt die Insel Catan. Die Aufgabe ist es, diese rundenweise Insel zu besiedeln.
+
+Das Spielfeld besteht dabei aus Landschafts-, Weg- und Kreuzungsfeldern.
+Landschaften generiern Rohstoffe, wenn sie ein Spieler angebunden hat und somit ernten kann. Die Ausschüttung ist dabei von auf den Feldern festgesetzeten Wahrscheinlichkeiten abhängig.
+Die Rohstoffe können von den Spielern zum Bau oder zum Handel genutzt werden.
+Handel kann unter den Spieler als auch mit der Bank betrieben werden.
+Der Bau ermöglicht es Spielern neue/mehr Landschaften und somit Rohstoffe zu erschließen.
+Auf dem Spielfeld findet sich außerdem ein Räuber, der mit eine gewissen Wahrscheinlichkeit in Aktion tritt und das Spielgeschehen "stört".
+Zudem ist es möglich Entwicklungskarten zu erwerben und zu spielen. Diese Sorgen für vorbestimmte, auf ihnen beschriebene Sondereffekte. 
+Mit den Aktionen im Spiel verdienen die Spieler Punkte und der Spieler der als erstes eine feste Punktzahl erreicht, ist der Gewinner.
+
+Spieler können sich über die Startseite registieren bzw. einloggen.
+Sie haben die Möglichkeit einer laufenden Partie beizutreten, eine neue Partie zu erstellen oder eine, auf ihrem Account gespeichtere, Partie zu laden.
+Beim erstellen einer neuen Partie wird zwischen zwei Startvarieanten gewählt:
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+Außerdem wird die Spieleranzahl festgelegt. In jeden dieser "Plätze", der nicht von einem menschlichen Mitspieler übernommen wird, wird automatisch ein Computer-Gegner eingefügt. Diese versuchen ihre Siedlungen anhand der verschieden Wahrscheinlichkeiten und Häfen möglichst strategisch gut zu plaziern, verteidigen sich, durch den Kauf von Entwicklungskarten, gegen den Räuber, handeln mit der Bank um fehlende Rohstoffe zu bekommen, handeln mit den anderen Spielern um eventuell günstiere Angebote als mit der Bank zu bekommen und "feilschen" dabei auch (d.h. verändern ihre Angebote möglichst viele Rohstoffe zu bekommen/möglichst wenigst wenig Rohstoffe zu bezahlen) und versuchen möglichst schnell möglichst viele Punkte zu erhalten.
+
+Auf dem eigenlichen Spielfälche wird Ihnem, neben dem Spielfeld und den anderen Spielfunktionen, noch weitere Dinge angezeigt:
+- Der Status der Partie: Name des Spielers der am Zug ist, Rundenanzahl, die Möglichkeit das Spiel zu speichern.
+- Ihr eigener Status: Name des Spielers, am Zug?, meine Farbe, Punktanzahl, Straßen, in Besitz, Verbundne Rohstoffe, Anzahl Siedlungen, Anzahl Städte, Rohstoffe und Anzahl im Besitz
+- Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.
+- Eine Zusammenfassung der Spielregeln in einem Tutorial und der Baukosten
+
+Außerdem gibt es jederzeit die Möglichkeit auf einen Impressum, ein Forum, die vollständigen Spielregeln und eine Auflistung aller Baukosten, sowie die Seite des originalen Brettspiels als auch einer Version der Seite auf Englisch, zuzugreifen.
+
+Auf das Impressum, das Forum, und die Startseite kann jeder zugreifen, auch ohne einen Account. Dort kann man sich auch überall einloggen.
+
+Zusammenfassung:
+Spielfeld
+- Landschafensfelder
+- Wegfelder
+- Kreuzungsfelder
+- Räuber
+Rohstoffe
+Handel
+Bau
+Punkte
+Registierung/Log-in
+Partie beitreten/erstellen/laden
+Computer-Gegener
+Status der Partie/des Spielers
+Chat
+Impressum
+Forum
+Regeln
+
+
+
+
+Abläufe:
+
+
+Vor den Spielern liegt die Insel Catan. Die Aufgabe ist es, diese rundenweise Insel zu besiedeln. Dabei erhalten sie Punkte und wer als erster 10 Punkte erhalten hat, hat gewonnen.
+
+
+Es gibt 6 verschiedene Landschaftentypen auf der Insel die verschiedene Rohstoffe erzeugen: 
+- Wald erzeugt Holz, 
+- Ackerland erzeugt Getreide, 
+- Hügelland erzeugt Lehm, 
+- Weideland erzeugt Wolle, 
+- Gebirge erzeugt Erz und 
+- Wüste erzeugt keine Erträge.
+18 rechteckige, kreisförmig angeorten Landschaftenfeldern bilden das Spielfeld umgeben von Meer.
+Zwischen den Landschaftsfeldern befinden sich Wegfelder und jeweils zwischen zwei Wegfelder befindet sich ein Kreuzungsfeld.
+Daraus ergibt sie ein solches Muster:   
+         ___ ___
+        | x | x |
+     ___|___|___|___ 
+    | x | x | x | x |
+ ___|___|___|___|___|___
+| x | x | x | x | x | x |
+|___|___|___|___|___|___|
+    | x | x | x | x |
+    |___|___|___|___|
+        | x | x |
+        |___|___|
+
+                                               " | "
+An jedem "X" befindet sich eine Landschaftfeld,  |  oder "___" steht jeweils für ein Wegfeld und die Lücken zwischen den Wegfeldern/dort wo jeweils zwei oder mehr Wegfelder auf ein ander treffen, steht für ein Kreuzungsfeld.
+Auf einen zufälligen Feld befindet sich zudem der Räuber.
+
+
+
+Die Spieler können nun auf den Kreuzungsfeldern Siedlungen plazieren. Z.B.:
+
+         ___ ___
+        |   |   |
+     ___|___x___|___ 
+    |   |   |   |   |
+ ___|___|___|___|___x___
+|   |   |   |   |   |   |
+|___|___x___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+
+Außerdem können, angrenzent zu einer Siedlung im Besitz des Spielers, Straßen auf den Wegfeldern plaziert werden. Beispeil (x = Siedlung, --- = eine Straße)
+
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   |
+ ___|___x---|___|___|___
+|   |   |   |   |   |   |
+|___|___|___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+
+
+Den Landschaftsfeldern sind 6 unterschiedliche Wahrscheinlichkeiten, von sehr häufig bis sehr selten, zugeortnet die die Spieler den Felder, durch farbliche makierung, ablesen können.
+Zu beginn jedes Zuges werden zufällig Landschaftsfelder ausgewählt die Rohstoffe erschütten. Felder mit einer höherer Wahrscheinlichkeit geben natürlich im Durchschnitt häufiger Rohstoffe.
+Ein Spieler erhält Rohstoffe von einem Landschaftsfelder falls er eine Siedlung hat die an ein solches grenzt. Zum Beispiel kann die Siedlung "X" von allen mit "r" makierten Feldern Rohstoffe erhalten:
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   | r | r |   |
+ ___|___|___x___|___|___
+|   |   | r | r |   |   |
+|___|___|___|___|___|___|
+    |   |   |   |   |
+    |___|___|___|___|
+        |   |   |
+        |___|___|
+        
+Zur Beginn der Partie dürfen die Spieler jeweils 2 Siedlung und 2 Straßen plazieren. Die Spielfieguren der Spieler unterscheiden sich dabei farbig.
+Danach beginnt jede Runde mit der Rohstoffauschüttung, wie oben beschrieben, für alle Spieler.
+Sonderfall: Mit zweit größter Häufigkeit erhält kein Spieler Rohstoffe sondern der Räuber wird aktiv. Alle Spieler, die mehr als 7 Rohstoffe besitzen, verlieren die Hälfte ihrer Rohstoffe. Bei ungeraden Zahlen wird zu Gunsten des betroffenen Spielers abgerundet (wer z. B. 9 Rohstoffe hat, verliernt 4 davon). Der Räuber raubt eine zufällige der, zu dem Landschaftsfeld auf dem er sich befindet, angrenzende Siedlung aus. Das bedeutet das der Besitzer dieser Siedlung einen weitere zufälligen Rohstoff verliert und dieser an den akitven Spieler übertragen wird.
+
+Der aktive Spieler darf dann Mitspielern und der Bank handeln, Entwicklungskarten spielen und bauen.
+
+Mit Mitspielern können alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen.
+Mit der Bank können Rohstoffe 4 zu 1 gehandelt werden, d.h. 4 gleiche Rohstoffe für einen belieben anderen (z.B. 4 Holz für ein Lehm).
+An manchen Wegfeldern zum Meer befinden sich zudem Häfen mit besondern Handels Optionen. Dieser eröffenen Spielern verbesserte Handelsangbot mit der Bank wenn sie eine Straße zu Ihnen bauen.
+Beispiel: x = Siedlung, --- = eine Straße, h = Hafen, H = nutzbarer Hafen
+         _h_ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   h
+ ___|___|___|___|___|___
+h   |   |   |   |   |   |
+|___|___|___|___|___|___|
+    h   |   |   |   |
+    |___|___x---|-H-|
+        |   |   | 
+        |___|___|
+        
+Außerdem kann er eine zufällige Entwickungskarten von der Bank für ein Erz + ein Wolle + ein Getreide kaufen. Es gibt drei Arten von Entwicklungskarten: Ritter, Fortschritt und Siegpunkte.
+Ritter: Wer eine Ritterkarte ausspielt, versetzt den Räuber auf ein zufälliges anders Feld. Wer mindestens 3 Ritterkarten und mehr Ritterkarten als aller anderen ausgespielt hat, erhält zu dem die Sonderkarte "Rittermacht", diese ist 2 Punkte wert.
+Erfindung: Der Spieler erhält 2 zufällige Rohstoffe.
+Monopol: Der Spieler erhällt alle Rohstoffe eines der Karte genanntes Typs von seinen Mitspielern.  Wer keinen solchen Rohstoff besitzt, muss auch nichts abgeben.
+Siegpunkte: Diese geben einen Punkt.
+
+Der akitver Spieler darf zudem bauen. 
+Für einen Lehm und ein Holz kann der eine Straße nach den oben gannten Regel platziern. 
+Der Spieler der die längste zusammenhängende Straße besitzt erhält den Bonus "Längste Handelsstraße". Dieser ist 2 Siegpunkte wert
+Weitere Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die neue Siedlung ist mindestens 2 Wegfelder weit entfernt von jeder anderen. Jede Siedlung ist 1 Punkt wert.
+(x = Siedlung, --- = eine Straße, b = geeigenter Bauplatz für eine neue Siedlung, S = Siedlung ander Spieler)
+         ___ ___
+        |   |   |
+     ___|___|___|___ 
+    |   |   |   |   |
+ ___|---|---x---|---b___
+|   |   |   |   |   |   |
+|___S___|___|___|___|___|
+    |   |   |   |   |
+    |___|___S___|___|
+        |   |   |
+        |___|___|
+
+
+Eine Siedlung kann zu einer Stadt ausgebaut werden, für 3 x Erz + 2 x Getreide. 
+Diese ist 2 Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
+
+Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen.
+
+
+
+
+
+================================
+=== Projektidee , 2016-08-06 ===
+================================
+
+Vor den Spielern liegt die Insel Catan. Sie besteht aus viereckigen Landfeldern, mit Meer rundherum. Die Aufgabe ist es, diese Insel zu besiedeln.
+
+Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. Dabei ist es möglich sowas mit menschlichen als auch mit Computer-Gegner zuspielen.
+Es besteht ausserdem die Möglichkeit eine laufende Partie zu speichern und wieder zu laden.
+Letztere reagieren auf das Spielverhalten der anderen, passen so ihres an und veränderen dementsprechend ihre Handelsangebote.
+
+Alle wichtig Informationen und Karten des Spielers werden angezeigt.
+
+Es gibt zwei Startvarieanten: 
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+
+Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen: 
+- Wald erzeugt Holz, 
+- Ackerland erzeugt Getreide, 
+- Hügelland erzeugt Lehm, 
+- Weideland erzeugt Wolle, 
+- Gebirge erzeugt Erz und 
+- Wüste erzeugt keine Erträge. 
+Landfeldern erhalten zudem jeweils eine Nummer. 
+
+An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. 
+Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden.
+Die Ecken und Kanten veränderen passend die ihre Farbe, je nach dem zu welchem Spieler sie gehören.
+Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen.
+
+Am Anfang der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. 
+Die Spielfieguren der Spieler unterscheiden sich dabei farbig.
+
+Zu beginn jedes Zuges werden zwei Zufallszahlen generiert und zusammen gerechenet. 
+Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
+
+Nun kann der aktive Spieler mit Mitspielern handeln. 
+Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen.
+Ein Chat-Fenster ermöglich es den Spielern, mit Hilfe öffentlicher und privater Gespräche, verhandlungen zu führen.  
+Außerdem kann der aktive Spieler mit der Bank handeln, Entwicklungskarten kaufen und besondere Handelsangebote der Häfen nutzen falls sie mithilfe einer Strasse angebunden hat. 
+
+Der akitver Spieler darf zudem bauen. 
+Für einen Lehm und ein Holz kann der eine Straße platziern. 
+Der Spieler der die längste zusammenhängende Straße besitzt erhält den Bonus "Längste Handelsstraße".
+Neue Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die nächste Siedlung ist mindestens 2 Kreuzungen weit entfernt von jeder anderen. 
+Eine Siedlung kann zu einer Stadt ausgebaut werden. 
+Diese ist mehr Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
+Diese geben entweder Siegpunkte oder sind Fortschrittkarten, welche jeweils beim ausspielen den auf ihnen beschrieben Effekt ausführen.
+
+Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen. 
+
+
+
+
+===========================================
+=== Projektidee BlackWolf63, 2016-04-17 ===
+===========================================
+
+Umsetzung des Regelwerks und Spielfelds des Spiels Siedler von Cartan nach http://www.catan.de/files/downloads/4002051693602_catan_-_das_spiel_0.pdf
+
+Spieler eröffenen über eine Startseite eine Partie oder tretten einer erstellenten Partie bei. 
+Das Spielfeld grafisch zu sehen sein. 
+Alle wichtig Informationen und Karten des Spielers werden angezeigt.
+
+Es gibt zwei Startvarieanten: 
+- für Einsteiger, welches ein festes Spielfeld hat und die Spielregeln am Anfang der Partie anzeigt und 
+- für Fortgeschrittene welches eine zufällig generierte Spielfeld bietet.
+
+Das Spielfeld besteht aus 19 fünfeckigen Landfeldern, um geben von Meer. 
+
+Es gibt 6 verschiedene Landschaften die verschiedene Rohstoffe erzeugen: 
+- Wald erzeugt Holz, 
+- Ackerland erzeugt Getreide, 
+- Hügelland erzeugt Lehm, 
+- Weideland erzeugt Wolle, 
+- Gebirge erzeugt Erz und 
+- Wüste erzeugt keine Erträge. 
+
+Landfeldern erhalten zudem eine Nummer zwischen 2 und 11. 
+An dem Kanten zum Meer befinden sich Häfen mit besondern Handels Optionen. 
+Spieler können sie nutzen wenn sie eine Strasse zu ihnen haben.
+Siedlungen/Städte können auf den freien Ecken und Strassen auf freien Kanten der Felder platziert werden. 
+Ein Spieler kann die Rohstoffe von Feldern "ernten" die an eine Siedlung/Stadt von ihm grenzen. 
+Jeder Zu beginn jedes Zuges werden zwei Zufallszahlen zwischen 1 und 5 generiert und zusammen gerechenet. 
+Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. 
+
+Die Aufgabe der Spieler besteht darin, die Insel zu besiedeln. 
+Der Spieler der zuerst 10 Spiegpunkte erreicht hat gewonnen. 
+Zu beginn der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. 
+Die Spielfieguren der Spieler unterscheiden sich farbig.
+
+Am Anfang jedes Zuges erhalten alle Spieler ihre Rohstoffe. 
+Nun kann der aktive Spieler mit Mitspielern handeln. 
+Alle Rohstoffe und Karten in belieben Kombinationen handeln, solange beide diesem Angebot zustimmen. 
+Außerdem kann der aktive Spieler mit der Bank handeln. 
+Hier kann er 4 identische Rohstoffe gegen einen blieben andern tauschen und besondere Handelsangebote der Häfen nutzen falls den entsprechen angebunden hat. Außerdem kann man für ein Erz, ein Wolle undn ein Getreide eine Entwicklungskarte kaufen.
+
+Nun darf der akitver Spieler bauen. 
+Für einen Lehm und ein Holz kann der eine Straße platziern. 
+Der Spieler der die längste zusammenhängende Straße besitzt (ohne Abzweigungen) erhält den Bonus "Längste Handelsstraße". 
+Dieser ist zwei Spiegpunkte wert. 
+
+Neue Siedlungen kosten ein Lehm, ein Holz, ein Wolle und ein Getreide. 
+Voraussetzung hierfür ist, dass eine der eigenen Straßen dort hin führt und die nächste Siedlung ist mindestens 2 Kreuzungen weit entfernt von jeder anderen. 
+Eine Siedlung ist ein Siegpunkt wert. 
+Eine Siedlung kann zu einer Stadt ausgebaut werden. 
+Dies kostet 3x Erz und 2x Getreide. 
+Eine Stadt ist zwei Siegpunkte wert und angrenzende Landfelder geben jedes mal zwei Rohstoffe anstatt von einem. 
+Darüber hinaus kann er aktive Spieler Entwicklungskarten in seinem Besitz spielen. 
+Diese geben entweder Siegpunkte oder sind Fortschrittkarten, welche jeweils beim ausspielen den auf ihnen beschrieben Effekt ausführen.
+
+===========================================
+=== Projektidee BlackWolf63, 2016-04-05 ===
+===========================================
+
+Ich würde versuchen eine kleine Social-Media-Plattform, ähnliche wie Facebook und co., einzurichten.
+
+Nutzer sollen Konten erstellen können die von anderen Nutzern einsehbar sind. Ausßerdem sollen sie Texte (eventuell Bilder) "posten" können und die Möglichkeiten haben private Textnachrichten an andere zu versenden.
+
+===================================
+=== Feedback Alpers, 2016-04-05 ===
+===================================
+
+Die Idee ist leider nicht gut, weil Sie "ein interaktives Programm" entwickeln sollen. Das bedeutet, dass es Elemente geben soll, die Nutzer anwählen können und/oder Bereiche, in denen sie etwas eintragen oder auswählen können. Es soll im Hintergrund ein Programm aktiv sein, das eine gewisse Funktionalität umsetzt und mit dem NutzerInnen interagieren können.
+
+Im Gegensatz dazu bieten soziale Netzwerke im Grunde nicht mehr an als jedes Mail-Programm: Texte an beliebige Empfänger verschicken und empfangen, sowie beliebige Anhänge einfügen. Die Funktionalitäten, die dabei sicher gestellt werden müssen haben vorrangig etwas mit der Administration von Servern und Datentransfers zu tun. Es gibt nur zwei Unterschiede zwischen sozialem Netzwerk und E-Mail-Client: Der eine ist die Darstellung (also das Design und damit etwas, was nicht Teil dieses Kurses ist) und das andere ist die Tatsache, dass soziale Netzwerke vorrangig dafür entwickelt werden, um mittels Methoden des Big Data massenhaft Daten über NutzerInnen zu gewinnen und diese zu Gewinnzwecken zu verwenden.
+
+Versuchen Sie deshalb, entsprechend der nächsten Aufgabe ein "Siedler von Catan" als Projektidee zu beschreiben. (Wenn Sie das Spiel nicht kennen, schauen Sie sich im Netz um, Sie werden dort eine Vielzahl an Videos und Beschreibungen finden.)
+
+===============================================================
+=== Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+===============================================================
+(gelöscht, da im Lernraum für alle einsehbar)
+
+===================================
+=== Feedback Alpers, 2016-05-31 ===
+===================================
+
+Leider ist Ihre Beschreibung noch deutlich zu nahe am Regelwerk des Brettspiels. Eine Beschreibung sollte in den ersten Zeilen Lust darauf machen, mehr zu erfahren.
+
+Eine Zusammenfassung sollte wie gesagt das Interesse am Spiel wecken, also müssen Sie darin in sehr knapper Form den Kern des Spiels zusammenfassen. Und der hat mit dem Zählen von Punkte oder der Anzahl von Spielfeldern nichts zu tun. Das selbe gilt für die folgenden Sätze, in denen Sie angeben, wie Spieler wie viele Punkte bekommen können.
+
+Denken Sie bitte auch daran, dass es nicht um eine 1:1-Umsetzung des Brettspiels selbst geht. Hier denke ich beispielsweise an die Spielerzahl: Es sollte möglich sein, dass ein Spieler das Spiel alleine spielen kann (Stichwort: Computergegner), aber schauen Sie auch, welche Möglichkeiten es gibt, um das Spiel für mehr als 5 Spieler anzupassen.
+
+Danach sollte die Beschreibung alle für Spieler relevanten Teile des Spiels beinhalten. Hier sind Sie leider auch zu nahe am Brettspiel: Wenn Sie die Spielfelder mit den Zahlen 2 bis 11 nummerieren, dann beschränken Sie sich unnötig. Beim Brettspiel gibt es dagegen kaum eine andere Möglichkeit. Und umgekehrt ist es schwierig, mit den Mitteln, die Sie bislang kennen gelernt haben, Sechsecke zu programmieren. Quadrate sind dagegen ganz einfach.
+
+Die Projektbeschreibung ist also im Kern eine Inhaltsangabe. Der Unterschied gegenüber dem Deutschunterricht ist der, dass Sie ein Computerprogramm zusammenfassen müssen, das Sie selbst konzipieren sollen und für das einige Vorgaben einzuhalten sind.
+
+Für die Umsetzung in ein Computerspiel müssen Sie jetzt genau herausarbeiten, was für Interaktionsmöglichkeiten es geben soll. Die sind wiederum die Basis für die interaktiven unter den strukturellen Elementen. Und machen Sie hier bitte nicht den Fehler, die Elemente des Brettspiels als Elemente des Computerspiels umzusetzen.
+
+Hier noch ein Absatz zum Thema Interaktion: Die Schaltflächen, die NutzerInnen verwenden können sind nur die bedienbaren Elemente eines Computerprogramms. Interaktion ist wesentlich mehr als das. Denken Sie beispielsweise daran, wie eine Pokerrunde gespielt wird. Dabei spielt es nämlich eine Rolle, welche Karten abgeworfen wurden. Die Spieler (und bei einem Computerprogramm der Computer) analysieren kontinuierlich das Verhalten der anderen Spieler und ändern Ihren Spielstil in Abhängigkeit davon. Und genau das müssen Sie auch als Teil Ihres Projekts ausarbeiten und in die Projektbeschreibung integrieren.
+
+Hier die zweite Schwierigkeit: Sie müssen sich überlegen, was Sie alles streichen und was sie alles ergänzen müssen, damit es ein eigenständiges webbasiertes Computerspiel wird.
+
+Sie müssen bei der Projektkonzeption also insbesondere an Dinge denken, die in einem Brettspiel nicht vorkommen. Ein Log-In oder eine Highscore-Liste wären nur zwei von vielen Möglichkeiten, die hinzukommen. Die direkte Unterhaltung zwischen Spielern muss dagegen im Bedarfsfall anders gelöst werden. Und Aufgaben wie das Aufnehmen einer Karte, das verschieben eines Elements auf dem Spielbrett fallen häufig bei Computerspielen unter den Tisch.
+
+Denken Sie bitte auch daran, dass Änderungen in einem Teil des Projekts häufig auch Änderungen in einem anderen Teil des Projekts nach sich ziehen.
+
+Und arbeiten Sie bitte mit Überschriften, aus denen erkennbar ist, was die nächsten Zeilen beschreiben. (Stichwort: Regeln, Strukturen, ...)
+
+Wertung 2: Projektbeschreibung: gesamt: 2 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 2 (leider sehr unübersichtlich)
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
+
+===================================
+=== Feedback Alpers, 2016-06-27 ===
+===================================
+
+Ein zentrale Aspekt am Leistungsnachweis für das Projekt besteht darin, dass er bescheinigt, dass Sie kontinuierlich am Projekt weiter gearbeitet haben.
+
+Leider haben Sie dagegen seit dem letzten Feedback nicht am Projekt gearbeitet.
+
+===================================
+=== Feedback Alpers, 2016-07-25 ===
+===================================
+
+== I ==
+Die Beschreibung ist weitgehend gut, allerdings orientiert sie sich noch zu sehr am Brettspiel bzw. an den Beschränkungen, die ein Brettspiel nötig macht.
+
+Hier ein Beispiel:
+"Landfeldern erhalten zudem eine Nummer zwischen 2 und 11."
+
+Diese Einschränkung ist für das Brettspiel relevant: Die Zahlen von 2 bis 11 werden dort gewählt, weil es z.B. keinen sieben-seitigen Würfel geben kann. Ein Computer kann dagegen problemlos auch einen Zufallszahlengenerator von 1 bis 7 erzeugen.
+
+"Spieler können sie nutzen wenn sie eine Strasse zu ihnen (den Häfen) haben."
+
+Dieser Satz ist typisch für ein Brettspiel, er wird Ihnen aber bei der Programmierung (zusammen mit der Festlegung, dass die Felder fünfeckig sein sollen) um die Ohren fliegen: Mit den Mitteln, die Sie nutzen dürfen können wird es extrem schwierig, Felder zu programmieren, die nicht viereckig sind. Weiterhin müssen Sie sich überlegen, wie Sie eine Straße programmieren wollen.
+
+== II ==
+Leider ist einige Sätze der Beschreibung immer noch unklar.
+
+Beispiel:
+"Das Spielfeld grafisch zu sehen sein."
+
+Dieser Satz (abgesehen davon, dass da ein Verb fehlt) sagt leider nichts aus: Es ist unklar, was Sie damit meinen. Und vor allem sagt er nichts über den Aufbau des Spielfelds auf. Allerdings habe ich eine grobe Vorstellung von dem, was Sie meinen und wenn die zutrifft, dann nehmen Sie sich hier etwas vor, das nur mit Canvas umsetzbar ist. Canvas ist aber für dieses Projekt nicht zugelassen.
+
+== III ==
+Auch wenn Sie auf die Webbasierung nicht eingehen, scheint die implizit schon enthalten zu sein.
+
+== IV ==
+Leider haben Sie die in der Beschreibung geforderte Interaktion (die zum Teil Adaption ist) noch nicht umgesetzt.
+
+== Zusammenfassung und Ausblick ==
+Bevor Sie mit die Arbeit an der Struktur fortsetzen müssen Sie den Aufbau des Spielfeldes festlegen.
+Auch sonst müssen Sie noch mehr Arbeit in die Beschreibung investieren, denn wenn Sie in die die geforderte Interaktion und Webbasierung integriert haben, wird voraussichtlich in Teilen eine ganz andere Struktur herauskommen als die, die Sie im Moment entwickelt haben.
+
+Wertung 2: Projektbeschreibung: gesamt: 4 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 4
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
+
+===================================
+=== Feedback Alpers, 2016-09-30 ===
+===================================
+
+== 1.) Inhaltliches Feedback ==
+Leider fehlt oben an vielen Stellen die konkrete Umsetzung.
+
+= 1.1.) Beschreibung der Computergegner =
+So schreiben Sie bezüglich der Partien:
+"Dabei ist es möglich sowas mit menschlichen als auch mit Computer-Gegner zuspielen. ... Letztere reagieren auf das Spielverhalten der anderen, passen so ihres an und veränderen dementsprechend ihre Handelsangebote."
+
+Aber Sie bleiben hier an der Oberfläche: Momentan ist unklar, wie die Anpassung erfolgt, bzw. nach welchen Kriterien.
+
+= 1.2.) Beschreibung der Anzeige =
+
+Auch hier bleiben Sie bei weitem zu oberflächlich:
+"Alle wichtig Informationen und Karten des Spielers werden angezeigt."
+
+Was sind diese Informationen und Karten? Bzw. für wie viele Elemente müssen bei der Konzeption Elemente bereit gehalten werden?
+
+= 1.3.) Beschreibung des Spielstarts =
+
+"Es gibt zwei Startvarieanten: 
+- für Einsteiger, welches ein festes Spielfeld hat ..."
+
+Auch hier fehlen die für die Entwicklung des Spiels essentiellen Informationen: Wie ist das Spielfeld aufgebaut?
+
+"Am Anfang der Partie platziert jeder Spieler 2 Straßen und 2 Siedlungen auf dem Spielfeld. ..."
+
+Wenn Sie sich die Beschreibung bis zu diesem Punkt ansehen, dann werden Sie feststellen, dass es bei Ihrer Beschreibung nichts gibt, worauf die Straßen und Siedlungen platziert werden können.
+
+= 1.4.) Voraussetzung bekannten Wissens =
+
+"Zu beginn jedes Zuges werden zwei Zufallszahlen generiert und zusammen gerechenet. 
+Jedes Feld die die Nummer dieses "Würfelwurfs" hat liefert den entsprechenden Rohstoff. "
+
+Hier fehlt die Information darüber, welche Zahlen und welche Rohstoffe zusammenhängen.
+
+= 1.X.) =
+
+Wenn man die Beschreibung, vom 6. August und die vom 17. April vergleicht, wird deutlich, dass Sie zwar einzelne Passagen gestrichen haben, aber ansonsten praktisch nicht an der Beschreibung gearbeitet haben. Es ist immer noch nahezu der gleiche Inhalt.
+
+Hier die Liste der relevanten Änderungen:
+
+- Anstelle von 5-eckigen haben Sie jetzt 4-eckige Spielfelder definiert. Aber Sie haben sich nicht damit auseinander gesetzt, was das für den Spielablauf bedeutet.
+
+=== Feedback bezüglich der Nutzung von Git ===
+
+Da die Änderungen der letzten zwei Monate ausgesprochen knapp ausgefallen sind, habe ich mir Ihre Historie der Änderungen angesehen.
+
+= 3. August =
+
+Hier haben Sie fünfmal in Folge einen commit/push durchgeführt, bei denen Sie jeweils Änderungen durchgeführt haben wie die Änderung eines Datums. Das ist komplett überflüssig! Ein commit/push bedeutet, dass Sie z.B. sicherheitshalber einen Zwischenstand speichern, bevor Sie umfangreiche Änderungen durchführen oder auch, dass Sie eine wichtige Änderung am Projekt durchgeführt haben, auch wenn die vielleicht nur wenige Zeilen umfasst.
+
+Die letzte Änderung an diesem Tag bestand darin, dass Sie die Spiegelstriche am Anfang jeder Zeile entfernt haben.
+
+= 6. August =
+
+Hier haben Sie ein paar neue Ideen eingefügt. Das ist ein sinnvoller commit.
+
+= 8. August =
+
+Hier haben Sie ein Datum geändert und commited. Überflüssig.
+
+= 9. August =
+
+Hier haben Sie die vollständige Auflistung der strukturellen Elemente, der Gruppen und Ansichten an den Anfang des Dokuments eingefügt. Dadurch ist leider nicht ohne umfangreiche Recherche erkennbar, was Sie gerade geändert haben.
+
+= 26. August =
+
+Fünf oder sechs Änderungen an der Bezeichnung einzelner struktureller Elementen
+
+= 1., 4., 9. September =
+
+Hinweis, dass die Änderungen noch nicht abgeschlossen sind. (je 2 commits)
+
+= 3. September =
+
+Änderungen an rund 45 strukturellen Elementen, die aber fast ausschließlich Umformulierungen wie die folgende waren:
+Aus "Schaltfläche "Spiel Starten"" wurde "Schalter mit Beschriftung "Spiel Starten""
+was beides das selbe ist.
+
+= 14. September =
+
+Praktisch alle Einträge in der strukt.html wurden gelöscht und vollständig neu wieder eingefügt. Dabei wurden auch die Nummerierungen geändert, obwohl Sie genau das nicht tun sollten.
+
+=== Zusammenfassung ===
+
+Zurzeit haben Sie eine Projektbeschreibung, bei der kaum erkennbar ist, wie sich die einzelnen Teile in der Struktur wiederfinden.
+Außerdem ist erkennbar, dass Sie bislang kaum etwas konkret ausgearbeitet haben, das nicht auch so oder nahezu in dieser Form im Brettspiel steckt.
+Sie haben zwar an der Struktur gearbeitet, aber aufgrund der Art, wie Sie das getan haben ist kaum erkennbar, wo welche Änderungen durchgeführt wurden.
+Und obwohl Sie Gruppen definiert haben, haben Sie noch keine Zeile Quellcode entwickelt.
+
+Deshalb nochmal der ganz klare Hinweis:
+
+Ein Softwareprojekt wird heute praktisch immer so entwickelt, dass ständig an allen Teilen des Projekts Änderungen erfolgen. Ein Ablauf wie beim sogenannten Wasserfallmodell, bei dem immer nur an einer Phase gearbeitet wird, nach deren Abschluss die nächste Phase begonnen wird gibt es heute nur noch im Ingenieursbereich. In der Medieninformatik ist dieser Ansatz praktisch nicht existent. Sie müssen sich daran gewöhnen, immer wieder zu früheren Stellen eines Projekts zurück zu kehren, dort Änderungen auszuführen und auch die aus diesen Änderungen resultierenden Änderungen an anderer Stelle eines Projekts umzusetzen.
+
+======================================
+=== Wertung 1: Formale Vorgaben: - ===
+======================================
+- Missachtung der Konventionen für Dateinamen, Verzeichnisstruktur usw. (je -1 Pk.)
+
+=================================================
+=== Wertung 2: Projektentwurf: gesamt: 4 / 10 ===
+=================================================
+- Knappe und klare Stichpunkte 0 bis 2 Pk.: 1 (Es gibt viele Beschreibungen, die von den Stichpunkten ablenken, sodass die Umsetzung deutlich erschwert wird.)
+- Umfang der eigentlichen Anwendung 0 bis 3 Pk.: 3 
+- Aspekte verteilter Anwendungen 0 bis 3 Pk.: 1 
+- Aspekte adaptiver Anwendungen 0 bis 2 Pk.: 1 
+=== (Malus beim Projektentwurf) ===
+- Werbeslogans u.ä. bis zu 3 Pk. Abzug: 0 
+- Design- oder Layoutvorgaben bis zu 5 Pk. Abzug: -2 
+- Voraussetzung bekannten Wissens bis zu 5 Pk. Abzug: 0
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 6 / 10 ===
+================================================================
+- Knappe Form 0 bis 3 Pk.: 3 
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk., 0 bis 7 Pk.: 3
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. bis zu 5 Pk. Abzug: 0
+
+=======================================
+=== Wertung 4: Microservices: 5 / 5 ===
+=======================================
+- für jeden für die Kernanwendung sinnvollen Microservice 1 Pk.: 5
+=== (Malus bei strukt. Elem.) ===
+- Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug: 0
+(Dies ist keine abschließende Wertung.)
+
+=========================================
+=== Wertung 5: Ansichten/Views: 5 / 5 ===
+=========================================
+- für jede sinnvolle Ansicht 1 Pk.: 5
+(Dies ist keine abschließende Wertung.)
+
+Keine Umsetzung in HTML/PHP/MySQL: 0 Pk.
+
+Damit haben Sie 20 von 35 nötigen Punkten erreicht. 
+
+Die fehlenden 15 Punkte können Sie wie beschrieben über die Umsetzung eines Projektes erreichen, das Sie in den nächsten Tagen erhalten werden. Sollten dann immer noch Punkte fehlen, können Sie an Ihrem Projekt weiterarbeiten. Sprechen Sie mich in dem Fall zeitnah an.
